@@ -8,7 +8,7 @@ const HeaderRightPage = () => {
       <HeaderLinkCardPage/>
       
       <NormalText>Phone</NormalText><NormalText>010 9287 5350</NormalText>
-      <NormalText>E-mail</NormalText><NormalText>guri930219@gmail.com</NormalText>
+      <NormalText>E-mail</NormalText><NormalText>guri930219@gmail.com2</NormalText>
       
     </InnerWrapper>
   )
