@@ -11,6 +11,7 @@
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "next": "12.3.1",

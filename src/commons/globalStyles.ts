@@ -19,12 +19,27 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 1rem;
 	font: inherit;
 	vertical-align: baseline;
 	color: #000;
+	.container{
+		@media (min-width: 768px) {
+		width: 750px;
+	}
+	@media (min-width: 992px) {
+		width: 970px;
+	}
+  @media (min-width: 1400px) {
+		width: 1400px;
+  }
+	}
+	
 	.bold {
 		font-weight: bold;
+	}
+	.right{
+		align-items: flex-end;
 	}
 }
 /* HTML5 display-role reset for older browsers */
@@ -51,13 +66,28 @@ table {
 	border-spacing: 0;
 }
 `
+export const Container = styled.div`
+	width: 100%;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	padding: 50px 0;
 
+`
 export const HeadTitle = styled.h1`
-	font-size: 40px;
+	padding: .5rem 0;
+	font-size: 2.5rem;
 `
 export const SubTitle = styled.h2`
-	font-size: 20px;
+	padding: .4rem 0;
+	font-weight: lighter;
+	font-size: 1.25rem;
 `
 export const NormalText = styled.p`
-	font-size: 16px;
+	padding: .3rem 0;
+	font-size: 	1rem;
+`
+export const BoldText = styled.span`
+	font-weight: bold;
 `

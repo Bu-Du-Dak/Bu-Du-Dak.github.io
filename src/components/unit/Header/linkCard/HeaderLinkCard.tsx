@@ -1,15 +1,20 @@
-import styled from "@emotion/styled"
-
+import { BlogIcon, GithubIcon, SocialBox, SocialItem, Wrapper } from "./HeaderLinkCard.styles";
 const HeaderLinkCardPage = () => {
-  return(
+  return (
     <Wrapper>
-      asdasd
+      <SocialBox>
+        <SocialItem>
+          <a href="https://github.com/Bu-Du-Dak" target="_blank">
+            <GithubIcon className="icons" />
+          </a>
+        </SocialItem>
+        <SocialItem>
+          <a>
+            <BlogIcon className="icons" />
+          </a>
+        </SocialItem>
+      </SocialBox>
     </Wrapper>
-  )
-}
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  
-`
-export default HeaderLinkCardPage
+  );
+};
+export default HeaderLinkCardPage;
