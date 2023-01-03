@@ -19,6 +19,7 @@ const LayoutWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 20px;
   `
 
 const Body = styled.div`
@@ -27,7 +28,7 @@ const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  background-color: gray;
   
 `;
 export default Layout

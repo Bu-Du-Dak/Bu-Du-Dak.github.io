@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	color: #000;
+	box-sizing: border-box;
 	.container{
 		@media (min-width: 768px) {
 		width: 750px;

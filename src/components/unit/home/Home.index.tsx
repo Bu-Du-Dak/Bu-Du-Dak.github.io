@@ -1,6 +1,10 @@
+import SectionPage from "../Section/Section.index"
+
 const HomePage = () => {
   return (
-    <div>ddddddd</div>
+    <>
+      <SectionPage title="About Me"/>
+    </>
   )
 }
 export default HomePage
