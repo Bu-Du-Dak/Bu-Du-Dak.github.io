@@ -28,7 +28,7 @@ const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: gray;
+  /* background-color: gray; */
   
 `;
 export default Layout
