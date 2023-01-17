@@ -1,9 +1,9 @@
 import { ItemWrapper } from "./MainItems.styles"
 
-const MainItems = ({title}:{title:string}) => {
+const MainItems = () => {
   return(
     <ItemWrapper>
-      
+      ㅁㄴㅇㅁㄴㅇㅁㄴㅇ
     </ItemWrapper>
   )
 }

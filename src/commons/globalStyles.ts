@@ -42,6 +42,7 @@ time, mark, audio, video {
 	.right{
 		align-items: flex-end;
 	}
+	font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
