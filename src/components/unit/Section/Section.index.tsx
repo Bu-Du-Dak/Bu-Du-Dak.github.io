@@ -8,7 +8,7 @@ const SectionPage = ({title,Component}:{title:string,Component:JSX.Element}) => 
             <SectionTitle className="BottomDashed">{title}</SectionTitle>
 
             {Component}
-
+            test
             <MainItems/>
         </Wrapper>
     )
