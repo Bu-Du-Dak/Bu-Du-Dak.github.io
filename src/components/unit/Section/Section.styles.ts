@@ -14,6 +14,6 @@ export const SectionTitle = styled.h3`
     border-bottom: 2px dashed #ccc;
     font-size: 1.875rem;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 10px 0 15px 0;
     margin-bottom: 30px;
 `

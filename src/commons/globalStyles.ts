@@ -25,6 +25,7 @@ time, mark, audio, video {
 	color: #000;
 	box-sizing: border-box;
 	.container{
+		min-width: 400px;
 		@media (min-width: 768px) {
 		width: 750px;
 	}
@@ -70,6 +71,7 @@ table {
 `
 export const Container = styled.div`
 	width: 100%;
+	min-width: 400px;
 	display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,9 +89,22 @@ export const SubTitle = styled.h2`
 	font-size: 1.25rem;
 `
 export const NormalText = styled.p`
-	padding: .3rem 0;
+	line-height: 2;
+	/* padding: .3rem 0; */
 	font-size: 	1rem;
+	text-align: justify;
 `
 export const BoldText = styled.span`
 	font-weight: bold;
+`
+export const Contents = styled.div`
+	width: 100%;
+	@media (min-width: 992px) {
+		width: 60%;
+	padding-left: 20px;
+	}
+ 	@media (min-width: 1400px) {
+		width: 70%;
+	padding-left: 20px;
+  	}
 `
