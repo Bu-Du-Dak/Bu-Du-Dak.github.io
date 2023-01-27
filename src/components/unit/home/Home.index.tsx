@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <SectionPage title="About Me" Component={<AboutMePage/>}/>
-      <SectionPage title="Experience" Component={<div>aaaa</div>}/>
+      <SectionPage title="Experience" Component={<div>점 스타일 먹이기</div>}/>
     </>
   )
 }
