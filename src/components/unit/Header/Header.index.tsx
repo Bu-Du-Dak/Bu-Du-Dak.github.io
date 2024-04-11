@@ -1,13 +1,13 @@
-import { Wrapper } from "./Header.styles"
-import HeaderLeftPage from "./left/Header.Left"
-import HeaderRightPage from "./right/Header.right"
+import { Wrapper } from './Header.styles';
+import HeaderLeftPage from './left/Header.Left';
+import HeaderRightPage from './right/Header.right';
 
 const HeaderPage = () => {
-  return(
+  return (
     <Wrapper>
-      <HeaderLeftPage/>
-      <HeaderRightPage/>
+      <HeaderLeftPage />
+      <HeaderRightPage />
     </Wrapper>
-  )
-}
-export default HeaderPage
+  );
+};
+export default HeaderPage;
