@@ -3,24 +3,58 @@ import styled from '@emotion/styled';
 
 // ! 초기화
 export const GlobalCss = css`
-  :root{
-    --background-color-light:#fff;
-    --text-color-light:#353638;
-    --background-color-dark:#353638;
-    --text-color-dark:rgba(255,255,255,0.9);
-
+  :root {
+    --background-color-light: #fff;
+    --text-color-light: #353638;
+    --background-color-dark: #353638;
+    --text-color-dark: rgba(255, 255, 255, 0.9);
+    --selected-text-dark: rgb(299, 184, 11);
+    --selected-background-dark: rgba(0, 0, 0, 0.2);
+    --selected-background-light: #eaeaea;
+    /* --selected-light: */
   }
   /* 테마별 스타일 */
   .light {
     --background-color: var(--background-color-light); /* 라이트 테마 배경색 */
     --text-color: var(--text-color-light); /* 라이트 테마 텍스트 색상 */
+    --selected-background-color: var(--selected-background-light);
   }
 
   .dark {
     --background-color: var(--background-color-dark); /* 다크 테마 배경색 */
     --text-color: var(--text-color-dark); /* 다크 테마 텍스트 색상 */
+    --selected-text-color: var(--selected-text-dark);
+    --selected-background-color: var(--selected-background-dark);
   }
-
+  /* drawer 스타일 */
+  .ant-drawer {
+    .ant-drawer-content-wrapper{
+        width:228px !important;
+      @media (min-width:420px){
+        width:378px !important;
+      }
+      @media (min-width: 768px) {
+        width:378px !important;
+      }
+      @media (min-width: 992px) {
+        width:378px !important;
+      }
+      @media (min-width: 1400px) {
+        width:378px !important;
+      }
+    }
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+  .ant-drawer-header{
+    .ant-drawer-title{
+      color: var(--text-color);
+    }
+    .anticon-close{
+      color: var(--text-color);
+    }
+  }
   body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -114,7 +148,12 @@ export const GlobalCss = css`
     vertical-align: baseline;
     box-sizing: border-box;
     .container {
-      min-width: 400px;
+      
+      min-width: 360px;
+      @media (min-width:420px){
+        width:390px;
+        padding:10px;
+      }
       @media (min-width: 768px) {
         width: 750px;
       }
@@ -125,7 +164,6 @@ export const GlobalCss = css`
         width: 1400px;
       }
     }
-
     .bold {
       font-weight: bold;
     }
@@ -149,7 +187,6 @@ export const GlobalCss = css`
     display: block;
   }
   body {
-
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1;
@@ -197,6 +234,9 @@ export const NormalText = styled.p`
   font-size: 1rem;
   text-align: justify;
 `;
+export const SmallText = styled.p`
+  font-size: .8rem;
+`
 export const BoldText = styled.span`
   font-weight: bold;
 `;
