@@ -4,8 +4,11 @@ import { Container } from '../../../commons/globalStyles';
 import { Body, LayoutWrapper, ThemeBtn } from './Layout.styles';
 import MenuBar from './menuBar/menuBar';
 import LayoutHeader from './header/LayoutHeader';
+import useScrollDirection from '../../../hooks/useScrollDirection';
+import { useMemo } from 'react';
 const Layout = props => {
   const { theme, setTheme } = useTheme();
+  const scrollDirection = useScrollDirection();
   const onClickChangeTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
@@ -13,9 +16,12 @@ const Layout = props => {
       setTheme('light');
     }
   };
+  const getScroll = useMemo(() => {
+    return scrollDirection;
+  }, [scrollDirection]);
   return (
     <>
-      <MenuBar />
+      <MenuBar scrollDirection={getScroll} />
       <Container>
         <LayoutWrapper>
           <LayoutHeader />

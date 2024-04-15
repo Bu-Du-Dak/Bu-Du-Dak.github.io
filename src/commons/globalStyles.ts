@@ -11,7 +11,6 @@ export const GlobalCss = css`
     --selected-text-dark: rgb(299, 184, 11);
     --selected-background-dark: rgba(0, 0, 0, 0.2);
     --selected-background-light: #eaeaea;
-    /* --selected-light: */
   }
   /* 테마별 스타일 */
   .light {

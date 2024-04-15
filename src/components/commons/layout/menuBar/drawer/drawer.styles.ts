@@ -52,6 +52,9 @@ const imageCardEffect = keyframes`
       background-position: 0 0;
     }
 `;
+export const Container = styled.div`
+  cursor: pointer;
+`
 export const ProfileWrapper = styled.div`
   display: flex;
   align-items: center;
