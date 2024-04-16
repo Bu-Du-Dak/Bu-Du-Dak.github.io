@@ -7,31 +7,31 @@ import LayoutHeader from './header/LayoutHeader';
 import useScrollDirection from '../../../hooks/useScrollDirection';
 import { useMemo } from 'react';
 const Layout = props => {
-  const { theme, setTheme } = useTheme();
-  const scrollDirection = useScrollDirection();
-  const onClickChangeTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  };
-  const getScroll = useMemo(() => {
-    return scrollDirection;
-  }, [scrollDirection]);
-  return (
-    <>
-      <MenuBar scrollDirection={getScroll} />
-      <Container>
-        <LayoutWrapper>
-          <LayoutHeader />
-          <Body className="container">{props.children}</Body>
-          <ThemeBtn theme={theme} onClick={onClickChangeTheme}>
-            {theme === 'dark' ? <UilSun /> : <UilMoon />}
-          </ThemeBtn>
-        </LayoutWrapper>
-      </Container>
-    </>
-  );
+	const { theme, setTheme } = useTheme();
+	const scrollDirection = useScrollDirection();
+	const onClickChangeTheme = () => {
+		if (theme === 'light') {
+			setTheme('dark');
+		} else {
+			setTheme('light');
+		}
+	};
+	const getScroll = useMemo(() => {
+		return scrollDirection;
+	}, [scrollDirection]);
+	return (
+		<>
+			<MenuBar scrollDirection={getScroll} />
+			<Container>
+				<LayoutWrapper>
+					{/* <LayoutHeader /> */}
+					<Body className="container">{props.children}</Body>
+					<ThemeBtn theme={theme} onClick={onClickChangeTheme}>
+						{theme === 'dark' ? <UilSun /> : <UilMoon />}
+					</ThemeBtn>
+				</LayoutWrapper>
+			</Container>
+		</>
+	);
 };
 export default Layout;

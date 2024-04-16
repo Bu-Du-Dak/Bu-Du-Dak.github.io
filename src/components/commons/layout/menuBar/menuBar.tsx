@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { NormalText } from '../../../../commons/globalStyles';
-import MenuDrawer from './drawer/drawer';
+import MenuDrawer from './drawer/drawer.container';
 import { keyframes } from '@emotion/react';
 
 const MenuBar = ({ scrollDirection }) => {

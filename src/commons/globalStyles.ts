@@ -9,13 +9,15 @@ export const GlobalCss = css`
     --background-color-dark: #353638;
     --text-color-dark: rgba(255, 255, 255, 0.9);
     --selected-text-dark: rgb(299, 184, 11);
+    --selected-text-light:#FA7268;
     --selected-background-dark: rgba(0, 0, 0, 0.2);
-    --selected-background-light: #eaeaea;
+    --selected-background-light: rgba(250,114,104,.2);
   }
   /* 테마별 스타일 */
   .light {
     --background-color: var(--background-color-light); /* 라이트 테마 배경색 */
     --text-color: var(--text-color-light); /* 라이트 테마 텍스트 색상 */
+    --selected-text-color: var(--selected-text-light);
     --selected-background-color: var(--selected-background-light);
   }
 
@@ -32,15 +34,6 @@ export const GlobalCss = css`
       @media (min-width:420px){
         width:378px !important;
       }
-      @media (min-width: 768px) {
-        width:378px !important;
-      }
-      @media (min-width: 992px) {
-        width:378px !important;
-      }
-      @media (min-width: 1400px) {
-        width:378px !important;
-      }
     }
     .ant-drawer-body {
       padding: 0;
@@ -52,6 +45,16 @@ export const GlobalCss = css`
     }
     .anticon-close{
       color: var(--text-color);
+    }
+  }
+  .ant-menu-sub{
+    .ant-menu-item-active{
+      .ant-menu-title-content{
+        color:var(--selected-text-color);
+      }
+      .ant-menu-item-icon{
+        color:var(--selected-text-color);
+      }
     }
   }
   body {
