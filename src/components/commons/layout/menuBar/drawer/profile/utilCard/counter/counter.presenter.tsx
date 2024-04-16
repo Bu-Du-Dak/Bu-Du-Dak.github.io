@@ -3,13 +3,13 @@ import {
   SmallText,
 } from '../../../../../../../../commons/globalStyles';
 import * as S from './counter.styles';
-const CounterUI = () => {
+const CounterUI = ({countUser}) => {
   return (
     <S.Wrapper>
       <S.Icon />
       <S.InnerWrapper>
-        <SmallText>Today : 2</SmallText>
-        <BoldText>Total : 24</BoldText>
+        <SmallText>Today : {countUser.today}</SmallText>
+        <BoldText>Total : {countUser.total}</BoldText>
       </S.InnerWrapper>
     </S.Wrapper>
   );

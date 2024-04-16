@@ -9,7 +9,7 @@ export const WeatherWrapper = styled.div`
 export const WeatherInnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 `;
 export const Items = styled(SmallText)`
   display: flex;

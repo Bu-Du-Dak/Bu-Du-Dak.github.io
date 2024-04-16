@@ -150,10 +150,9 @@ export const GlobalCss = css`
     vertical-align: baseline;
     box-sizing: border-box;
     .container {
-      
       min-width: 360px;
       @media (min-width:420px){
-        width:390px;
+        width:400px;
         padding:10px;
       }
       @media (min-width: 768px) {
