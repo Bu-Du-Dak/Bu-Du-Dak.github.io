@@ -1,7 +1,6 @@
 import * as S from './drawer.styles';
 import { Drawer } from 'antd';
 import { UilBars } from '@iconscout/react-unicons';
-import { useTheme } from 'next-themes';
 import Contact from './contact/contact.container';
 import Profile from './profile/profile.container';
 const DrawerUI = ({open,setOpen,items,onClickItems}) => {

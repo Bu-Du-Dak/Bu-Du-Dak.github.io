@@ -6,8 +6,10 @@ import {
   MinusOutlined,
   UserOutlined,
 } from '@ant-design/icons';
+import { UilAngleRight } from '@iconscout/react-unicons'
 import { useRouter } from 'next/router';
 import DrawerUI from './drawer.presenter';
+import { HeadTitle, NormalText } from '../../../../../commons/globalStyles';
 const MenuDrawer = () => {
   type MenuItem = Required<MenuProps>['items'][number];
   const router = useRouter();
@@ -38,10 +40,10 @@ const MenuDrawer = () => {
   const items: MenuProps['items'] = [
     getItem('About Me', '/', <UserOutlined />, null),
     getItem('Works', 'works', <BulbOutlined />, [
-      getItem('2024', '2024', <MinusOutlined />),
-      getItem('2023', '2023', <MinusOutlined />),
-      getItem('2022', '2022', <MinusOutlined />),
-      getItem('2021', '2021', <MinusOutlined />),
+      getItem('2024', '2024', <div>🐲</div>),
+      getItem('2023', '2023',<div>🐰</div> ),
+      getItem('2022', '2022', <div>🐯</div>),
+      getItem('2021', '2021', <div>🐮</div>),
     ]),
 
 
