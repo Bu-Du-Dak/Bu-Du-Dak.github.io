@@ -1,9 +1,8 @@
 import { useTheme } from 'next-themes';
 import { UilMoon, UilSun } from '@iconscout/react-unicons';
 import { Container } from '../../../commons/globalStyles';
-import { Body, LayoutWrapper, ThemeBtn } from './Layout.styles';
+import { Contents, LayoutWrapper, ThemeBtn } from './Layout.styles';
 import MenuBar from './menuBar/menuBar';
-import LayoutHeader from './header/LayoutHeader';
 import useScrollDirection from '../../../hooks/useScrollDirection';
 import { useMemo } from 'react';
 const Layout = props => {
@@ -24,8 +23,7 @@ const Layout = props => {
 			<MenuBar scrollDirection={getScroll} />
 			<Container>
 				<LayoutWrapper>
-					{/* <LayoutHeader /> */}
-					<Body className="container">{props.children}</Body>
+					<Contents className="container">{props.children}</Contents>
 					<ThemeBtn theme={theme} onClick={onClickChangeTheme}>
 						{theme === 'dark' ? <UilSun /> : <UilMoon />}
 					</ThemeBtn>

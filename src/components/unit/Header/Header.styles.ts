@@ -4,7 +4,7 @@ export const Wrapper = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between;
   @media (max-width: 650px) {
     justify-content: center;
 		flex-direction: column;
@@ -17,7 +17,7 @@ export const Wrapper = styled.header`
 	}
   @media (min-width: 1400px) {
 		width: 1400px;
-  }
+  } */
 `
 export const InnerWrapper = styled.div`
   display: flex;

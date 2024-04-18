@@ -16,11 +16,13 @@ const MenuDrawer = () => {
   const [open, setOpen] = useState(false);
   const [blogCategories, setBlogCategories] = useState();
   const onClick = e => {
-    router.push(e.key);
     if (e.keyPath.length > 1) {
-      router.push(`${e.keyPath[1]}/${e.keyPath[0]}`);
+      router.push(`/${e.keyPath[1]}/${e.keyPath[0]}`);
+      setOpen(false)
+    }else{
+      router.push(e.key);
+      setOpen(false)
     }
-    console.log(e);
   };
   const getItem = (
     label: React.ReactNode,
@@ -68,6 +70,7 @@ const MenuDrawer = () => {
   ];
   return (
     <DrawerUI
+      router={router}
       open={open}
       setOpen={setOpen}
       onClickItems={onClick}

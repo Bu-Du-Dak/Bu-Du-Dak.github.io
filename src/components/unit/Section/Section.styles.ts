@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 export const SectionTitle = styled.h3`
     width: 100%;
     text-align: center;
-    border-bottom: 2px dashed #ccc;
+    border-bottom: .5px solid var(--text-color-disabled);
     font-size: 1.875rem;
     font-weight: 300;
     padding: 10px 0 15px 0;

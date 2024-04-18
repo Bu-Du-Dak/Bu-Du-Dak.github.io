@@ -12,6 +12,7 @@ export const GlobalCss = css`
     --selected-text-light:#FA7268;
     --selected-background-dark: rgba(0, 0, 0, 0.2);
     --selected-background-light: rgba(250,114,104,.2);
+    --text-color-disabled: rgba(155, 157, 160,.6);
   }
   /* 테마별 스타일 */
   .light {
@@ -46,6 +47,11 @@ export const GlobalCss = css`
     .anticon-close{
       color: var(--text-color);
     }
+  }
+  .ant-menu-item-active{
+    .ant-menu-item-icon{
+        color:var(--selected-text-color) !important;
+      }
   }
   .ant-menu-sub{
     .ant-menu-item-active{
@@ -219,7 +225,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 0;
 `;
 export const HeadTitle = styled.h1`
   padding: 0.5rem 0;
@@ -240,15 +245,4 @@ export const SmallText = styled.p`
 `
 export const BoldText = styled.span`
   font-weight: bold;
-`;
-export const Contents = styled.div`
-  width: 100%;
-  @media (min-width: 992px) {
-    width: 60%;
-    padding-left: 20px;
-  }
-  @media (min-width: 1400px) {
-    width: 70%;
-    padding-left: 20px;
-  }
 `;

@@ -17,14 +17,19 @@ export const getVisitedUser = async (token) => {
         // 'Authorization': `Bearer ${process.env.NEXT_PUBLIC_GOOGLE_OAUTH_TOKEN}`,
         'Authorization': `Bearer ${token}`,
     };
-    const body = {
-        // "dimensions": [{ "name": "date" }],
-        "metrics": [{ "name": "activeUsers" }, { "name": "totalUsers" }],
+    const totalBody = {
+        "metrics": [{ "name": "totalUsers" }],
         "dateRanges": [{ "startDate": "2024-01-01", "endDate": "today" }],
         "keepEmptyRows": true
     };
+    const todayBody = {
+        "metrics": [{ "name": "active1DayUsers" }],
+        "dateRanges": [{ "startDate": "today", "endDate": "today" }],
+        "keepEmptyRows": true
+    };
     try{
-        const result = await axios.post(url, body, { headers });
-        return(result?.data.rows[0]?.metricValues)
+        const todayResult = await axios.post(url, todayBody, { headers });
+        const totalResult = await axios.post(url, totalBody, { headers });
+        return([todayResult?.data.rows[0]?.metricValues[0].value,totalResult?.data.rows[0]?.metricValues[0].value])
     }catch(e){console.log(e)}
 }

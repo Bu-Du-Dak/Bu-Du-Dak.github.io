@@ -1,7 +1,7 @@
 import { Menu } from 'antd';
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
+export const Container = styled.nav`
   cursor: pointer;
 `
 export const TodayCounterWrapper = styled.div`

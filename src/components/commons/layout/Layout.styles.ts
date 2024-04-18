@@ -9,7 +9,7 @@ export const LayoutWrapper = styled.div`
   padding: 0 20px;
 `;
 
-export const Body = styled.div`
+export const Contents = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ export const ThemeBtn = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  border: 1px solid var(--text-color);
+  border: .1px solid var(--text-color);
   background-color: var(--background-color);
   opacity: 0.6;
   cursor: pointer;

@@ -2,12 +2,14 @@ import styled from '@emotion/styled';
 import { NormalText } from '../../../../commons/globalStyles';
 import MenuDrawer from './drawer/drawer.container';
 import { keyframes } from '@emotion/react';
+import { useRouter } from 'next/router';
 
 const MenuBar = ({ scrollDirection }) => {
+  const router = useRouter()
   return (
     <Wrapper scrollDirection={scrollDirection}>
-      <div style={{ width: '57px' }} />
-      <NormalText>BuDuDak's</NormalText>
+      <div style={{ width: '76px' }} />
+      <NormalText style={{cursor:'pointer'}} onClick={()=>router.push('/')}>BuDuDak's</NormalText>
       <MenuDrawer />
     </Wrapper>
   );
@@ -33,7 +35,7 @@ const slideUp = keyframes`
     }
 
 `;
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
