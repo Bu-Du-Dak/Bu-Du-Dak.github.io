@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { NormalText } from '../../../../commons/globalStyles';
 import MenuDrawer from './drawer/drawer.container';
 import { keyframes } from '@emotion/react';
 import { useRouter } from 'next/router';
@@ -9,7 +8,7 @@ const MenuBar = ({ scrollDirection }) => {
   return (
     <Wrapper scrollDirection={scrollDirection}>
       <div style={{ width: '76px' }} />
-      <NormalText style={{cursor:'pointer'}} onClick={()=>router.push('/')}>BuDuDak's</NormalText>
+      <Title onClick={()=>router.push('/')}>부두닭의 개발 기록</Title>
       <MenuDrawer />
     </Wrapper>
   );
@@ -49,4 +48,9 @@ const Wrapper = styled.header`
       scrollDirection === 'up' ? slideDown : slideUp}
     0.5s ease-in-out forwards;
 `;
+const Title = styled.h1`
+  font-size: 1.2rem;
+  cursor: pointer;
+
+`
 export default MenuBar;

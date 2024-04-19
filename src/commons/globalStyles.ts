@@ -155,6 +155,7 @@ export const GlobalCss = css`
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
+    
     .container {
       min-width: 360px;
       @media (min-width:420px){

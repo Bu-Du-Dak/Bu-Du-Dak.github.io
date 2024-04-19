@@ -1,11 +1,12 @@
 import styled from "@emotion/styled"
-import { NormalText } from "../../../commons/globalStyles"
+import { NormalText, SubTitle } from "../../../commons/globalStyles"
 
-const Article = ({text,subContent,reverse}:{text:string,subContent?:JSX.Element,reverse?:boolean}) => {
+const Article = ({text,title,subContent,reverse}:{text:string,title?:string,subContent?:JSX.Element,reverse?:boolean}) => {
     return(
         <ArticleWrapper reverse={reverse}>
             {subContent&&subContent}
             <Contents subContent={subContent}>
+                {title&&<SubTitle>{title}</SubTitle>}
                 <NormalText>{text}</NormalText>
             </Contents>
         </ArticleWrapper>
@@ -20,6 +21,7 @@ const ArticleWrapper = styled.article`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 2rem;
     width: 100%;
     padding: 1rem 0;
     @media (min-width: 768px) {
@@ -36,12 +38,11 @@ const ArticleWrapper = styled.article`
 `
 const Contents = styled.div`
     width: 100%;
-    padding: 1rem 0;
-  @media (min-width: 992px) {
-    width: ${({subContent}:ArticleStyleProps)=> subContent ? '60%':'100%'};
-  }
-  @media (min-width: 1400px) {
-    width: ${({subContent})=> subContent ? '70%':'100%'};
-  }
+    @media (min-width: 992px) {
+        width: ${({subContent}:ArticleStyleProps)=> subContent ? '60%':'100%'};
+    }
+    @media (min-width: 1400px) {
+        width: ${({subContent})=> subContent ? '70%':'100%'};
+    }
 `
 export default Article

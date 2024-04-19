@@ -1,15 +1,28 @@
+import styled from "@emotion/styled"
+import BackgroundImage from "./backgroundImage/bgImage.dark"
 import SectionPage from "../Section/Section.index"
+import { useTheme } from "next-themes"
+import DarkBackgroundImage from "./backgroundImage/bgImage.dark"
+import LightBackgroundImage from "./backgroundImage/bgImage.light"
+import { useEffect } from "react"
 
 const HomePage = () => {
+  const {theme} = useTheme()
   return (
-    <>
-      {/* <SectionPage title="About Me" Component={<AboutMePage/>}/> */}
-      {/* <SectionPage title="Experience" Component={<div>점 스타일 먹이기</div>}/> */}
-      {/* <SectionPage title="About Me" Component={<AboutMePage/>}/> */}
-      {/* <SectionPage title="Experience" Component={<div>점 스타일 먹이기</div>}/> */}
-      {/* <SectionPage title="About Me" Component={<AboutMePage/>}/> */}
-      {/* <SectionPage title="Experience" Component={<div>점 스타일 먹이기</div>}/> */}
-    </>
+    <Container>
+      {theme==='dark' ? 
+        <DarkBackgroundImage/>:
+        <LightBackgroundImage/>
+      }
+      <div style={{width:'100%',height:'100vh'}}/>
+    <SectionPage title="asdasd" Component={<div>asdasdasd</div>}/>
+      <div style={{width:'100%',height:'3000px',backgroundColor:'#fff'}}></div>
+      
+    </Container>
   )
 }
+const Container = styled.div`
+  width: 100%;
+  /* position: relative; */
+`
 export default HomePage

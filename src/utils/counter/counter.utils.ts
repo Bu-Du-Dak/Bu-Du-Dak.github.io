@@ -14,7 +14,6 @@ export const getGoogleToken = async () => {
 export const getVisitedUser = async (token) => {
     const url = `https://analyticsdata.googleapis.com/v1beta/properties/${process.env.NEXT_PUBLIC_GOOGLE_ATTRUIBUTE_ID}:runReport`
     const headers = {
-        // 'Authorization': `Bearer ${process.env.NEXT_PUBLIC_GOOGLE_OAUTH_TOKEN}`,
         'Authorization': `Bearer ${token}`,
     };
     const totalBody = {
