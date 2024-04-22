@@ -10,9 +10,9 @@ const LightBackgroundImage = () => {
     // !isLoading&&
     <Background>
     {/* <A autoPlay muted preload='auto' aria-hidden loop src="https://tistory3.daumcdn.net/tistory/4939852/skin/images/allLogo.mp4"> */}
-    <A autoPlay muted preload='auto' aria-hidden loop src="https://videos.pexels.com/video-files/7539472/7539472-uhd_2160_3840_24fps.mp4">
+    {/* <A autoPlay muted preload='auto' aria-hidden loop src="https://videos.pexels.com/video-files/7539472/7539472-uhd_2160_3840_24fps.mp4">
         <CoverGlass/>
-    </A>
+    </A> */}
     </Background>
   );
 };

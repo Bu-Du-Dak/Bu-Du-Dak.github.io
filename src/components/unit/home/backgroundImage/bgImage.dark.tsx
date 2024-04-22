@@ -11,7 +11,7 @@ const DarkBackgroundImage = () => {
     // !isLoading &&
     <Background>
         <CoverGlass/>
-            <RainFallComponent />
+        <RainFallComponent />
     </Background>
   );
 };
@@ -27,7 +27,7 @@ const Background = styled.div`
   height: 100%;
   position: fixed;
   left: 0;
-  top: 100;
+  top: 0;
   z-index: -1;
   background-image: url('images/view.jpg');
   background-size: cover;
