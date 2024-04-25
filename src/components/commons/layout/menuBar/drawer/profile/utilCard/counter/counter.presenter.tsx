@@ -8,8 +8,8 @@ const CounterUI = ({countUser}) => {
     <S.Wrapper>
       <S.Icon />
       <S.InnerWrapper>
-        <SmallText>Today : {countUser.today}</SmallText>
-        <BoldText>Total : {countUser.total}</BoldText>
+        <SmallText>Today : {countUser.today||0}</SmallText>
+        <BoldText>Total : {countUser.total||0}</BoldText>
       </S.InnerWrapper>
     </S.Wrapper>
   );

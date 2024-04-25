@@ -17,7 +17,7 @@ const HomePage = () => {
       }
       <Intro/>
     <SectionPage title="asdasd" Component={<div>asdasdasd</div>}/>
-      <div style={{width:'100%',height:'3000px',backgroundColor:'#fff'}}></div>
+      {/* <div style={{width:'100%',height:'3000px',backgroundColor:'#fff'}}></div> */}
       
     </Container>
   )

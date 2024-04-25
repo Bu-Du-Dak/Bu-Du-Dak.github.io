@@ -18,7 +18,10 @@ const Counter = () => {
                 const total = data[1]
                 setCountUser({today,total})
                 setIsLoading(false)
-            }catch(e){console.log(e)}    
+            }catch(e){
+                setIsLoading(false)
+                console.log(e)
+            }
         }
         fetchData()
     },[])
