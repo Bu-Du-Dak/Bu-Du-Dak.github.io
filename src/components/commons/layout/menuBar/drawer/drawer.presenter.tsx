@@ -7,7 +7,6 @@ import CopyRight from './copyRight/copyRight.container';
 const DrawerUI = ({router,open,setOpen,items,onClickItems}) => {
   const main = (router.asPath.split('/')[1])
   const sub = (router.asPath.split('/')[2])
-
   return (
     <S.Container>
       <S.Button onClick={() => setOpen(true)}>

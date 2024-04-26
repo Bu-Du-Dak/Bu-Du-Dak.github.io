@@ -63,7 +63,7 @@ export const TypingWrapper = styled.p`
     font-size: 2.5rem;
   }
 `;
-export const Typing = styled.h3`
+export const Typing = styled.span`
   font-size: 2.5rem;
   color: var(--selected-text-color);
   @media (min-width: 420px) {

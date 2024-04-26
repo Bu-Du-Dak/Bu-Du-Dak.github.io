@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 
 const MenuBar = ({ scrollDirection }) => {
   const router = useRouter()
+  
   return (
     <Wrapper scrollDirection={scrollDirection}>
       <div style={{ width: '76px' }} />

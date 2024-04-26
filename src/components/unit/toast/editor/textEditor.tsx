@@ -1,12 +1,15 @@
-import { Editor, Viewer } from '@toast-ui/react-editor';
+import { Editor } from '@toast-ui/react-editor';
 import Prism from 'prismjs';
 
 import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
 import colorSyntax from '@toast-ui/editor-plugin-color-syntax';
 
+import 'prismjs/themes/prism.css'; 
+import '@toast-ui/editor/dist/toastui-editor.css';
+import '@toast-ui/editor/dist/theme/toastui-editor-dark.css'
+import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
 import 'prismjs/components/prism-java';
-import { useEffect, useRef, useState } from 'react';
-import TextViewer from '../viewer/textViewer';
+import { useRef, useState } from 'react';
 
 const TextEditor = () => {
   const toastRef = useRef(null);
@@ -14,8 +17,6 @@ const TextEditor = () => {
   const onChangeEditor = () => {
     setContents(toastRef.current.getInstance().getMarkdown());
   };
-  console.log(contents);
-  useEffect(() => {}, [contents]);
   return (
     <>
       <Editor
@@ -30,9 +31,6 @@ const TextEditor = () => {
         autofocus={false}
         plugins={[colorSyntax, [codeSyntaxHighlight, { highlighter: Prism }]]}
       />
-      <div style={{ width: '100%', height: '100%' }}>
-        <TextViewer contents={contents} />
-      </div>
     </>
   );
 };

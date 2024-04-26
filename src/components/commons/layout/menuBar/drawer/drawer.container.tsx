@@ -3,13 +3,10 @@ import { useState } from 'react';
 import {
   BulbOutlined,
   FormOutlined,
-  MinusOutlined,
   UserOutlined,
 } from '@ant-design/icons';
-import { UilAngleRight } from '@iconscout/react-unicons'
 import { useRouter } from 'next/router';
 import DrawerUI from './drawer.presenter';
-import { HeadTitle, NormalText } from '../../../../../commons/globalStyles';
 const MenuDrawer = () => {
   type MenuItem = Required<MenuProps>['items'][number];
   const router = useRouter();
