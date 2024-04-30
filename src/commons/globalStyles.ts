@@ -218,6 +218,9 @@ export const GlobalCss = css`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  strong{
+    font-weight: bold;
+  }
 `;
 export const Container = styled.div`
   width: 100%;
@@ -239,7 +242,7 @@ export const SubTitle = styled.h2`
 export const NormalText = styled.p`
   line-height: 2;
   font-size: 1rem;
-  text-align: justify;
+  white-space: pre-wrap;
 `;
 export const SmallText = styled.p`
   font-size: .8rem;

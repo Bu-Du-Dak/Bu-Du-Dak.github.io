@@ -1,5 +1,7 @@
+import rehypeRaw from 'rehype-raw';
+import ReactMarkdown from 'react-markdown';
 import styled from "@emotion/styled"
-import { NormalText, SubTitle } from "../../../commons/globalStyles"
+import { SubTitle } from "../../../commons/globalStyles"
 
 const Article = ({text,title,subContent,reverse}:{text:string,title?:string,subContent?:JSX.Element,reverse?:boolean}) => {
     return(
@@ -7,7 +9,7 @@ const Article = ({text,title,subContent,reverse}:{text:string,title?:string,subC
             {subContent&&subContent}
             <Contents subContent={subContent}>
                 {title&&<SubTitle>{title}</SubTitle>}
-                <NormalText>{text}</NormalText>
+                    <ReactMarkdown rehypePlugins={[rehypeRaw]}>{text}</ReactMarkdown>
             </Contents>
         </ArticleWrapper>
     )
@@ -38,6 +40,9 @@ const ArticleWrapper = styled.article`
 `
 const Contents = styled.div`
     width: 100%;
+  line-height: 2;
+  font-size: 1rem;
+  white-space: pre-wrap;
     @media (min-width: 992px) {
         width: ${({subContent}:ArticleStyleProps)=> subContent ? '60%':'100%'};
     }
