@@ -13,12 +13,21 @@ export const WORKS_TEXT_2021 = {
     `,
     4:`기존에 사용하던 Router 방식과 다른 Navigation 방식의 구조가 가장 큰 차이점이었던 것 같습니다. 
     이 시기에는 시간 내 만들기에 급급하여 많은 자료나 Docs 등이 제대로 구축되어 있지 않아 많은 반성을 하게 됩니다.`,
-    5:`프로젝트 진행 간 <strong style="color:var(--selected-text-color)">팀원들과의 협업 및 조율, 문제 해결 방안 제시</strong>에 대한 좋은 평가로 캠프 수료 후 딩코에서 함께 일하자는 제의를 받게 되어 
-    10월부터 프론트엔드 개발자로 딩코에 입사하게 되었습니다.`,
+    5:`프로젝트 진행 간 <strong style="color:var(--selected-text-color)">팀원들과의 협업 및 조율, 문제 해결 방안 제시</strong>에 대한 좋은 평가로 캠프 수료 후 코드캠프에서 함께 일하자는 제의를 받게 되어 
+    10월부터 프론트엔드 개발자로 입사하게 되었습니다.`,
     6:`처음에는 기존 강의 자료 보강 새로운 강의 자료 제작을 주로 하게 되었습니다.
     이후 팀장님의 강의 보조로써 함께 강의에 참여하여 수업 진행 간 <strong style="color:var(--selected-text-color)">수강생들의 에러 해결</strong>을 돕게 되었는데 다양한 상황을 마주하게 되어, 바로 해결이 어려운 에러는 퇴근 후 수강생들과 함께 밤늦게까지 모여 해결 방안을 찾아냈던 추억이 있습니다.`,
     7:`저 또한 수강생이었고, 수강생들과 가깝게 지내다 보니 개개인의 고충과 러닝 커브를 남들보다 더 알 수 있었습니다. 
     이런 편차를 해소하기 위해 <strong style="color:var(--selected-text-color)">그날 강의에 대한 정리본을 작성하여 제공</strong>했습니다. 
     <div style="text-decoration:line-through;">(사실 이 부분 때문에 수강생들이 저와 친근하게 지냈던 것 같습니다.)</div>`,
     8:`<strong style="color:var(--selected-text-color)">멘토로 지냈던 기간이 저의 기본 지식과 개념을 탄탄히 만들어 주었던 것 같습니다.</strong>`
+}
+export const WORKS_TEXT_2022 = {
+    1:`오프라인 부트캠프가 좋은 반응을 얻게 되어 <strong style="color:var(--selected-text-color)">온라인 부트캠프</strong>와 <strong style="color:var(--selected-text-color)">인터넷 강의 서비스 딩코</strong>를 제작하게 되었습니다.
+    (이 시기에 사업자명이 코드캠프에서 딩코로 변경됐습니다.)
+    부트캠프 서비스와 강의 서비스 각각 <strong style="color:var(--selected-text-color)">유저 페이지</strong>와 <strong style="color:var(--selected-text-color)">어드민 페이지</strong>로 나누어 제작하였고, 유저 화면은 모바일/태블릿/PC 어느 환경에서든 학습이 가능하도록 제작하였습니다.
+    `,
+    2:`프론트엔드 2명과 백엔드 2명이 <strong style="color:var(--selected-text-color)">2022년 4월부터 7월까지 개발</strong>하고, <strong style="color:var(--selected-text-color)">23년 1월까지 운영</strong>하였습니다.
+    온라인 강의 서비스에서 강의 관리에 대한 어드민 페이지와 강의 소개 페이지, 사용자들이 소통하는 community 페이지가 주된 작업이었으며, 
+    영상 등록 및 재생은 vimeo, 강의 자료 및 커뮤니티 게시글 등록에는 toastUI-editor를 활용하였습니다.`
 }

@@ -144,6 +144,8 @@ export const ProfileImage = styled.div`
     width: 12rem;
     height: 12rem;
   }
+  background-image: url('/images/qew.png');
+  background-size: cover;
   width: 10rem;
   height: 10rem;
   border-radius: 2rem;

@@ -45,14 +45,18 @@ const MenuDrawer = () => {
       getItem('2021', '2021', <div>🐮</div>),
     ]),
 
-
-
-    getItem('Blog', 'blog', <FormOutlined />, [
-      getItem('Option 9', '9'),
-      getItem('Option 10', '10'),
-      getItem('Option 11', '11'),
-      getItem('Option 12', '12'),
-    ]),
+    getItem('Blog', 'blog', <FormOutlined />, 
+    [
+      // ['a','b','c'].map((e)=>
+      // {
+      //  return getItem(e,e)
+      // })
+      getItem('백엔드 구축 중', '9',<div>🚧</div>),
+      // getItem('Option 10', '10'),
+      // getItem('Option 11', '11'),
+      // getItem('Option 12', '12'),
+    ]
+  ),
     { type: 'divider' },
     // getItem(
     //   'Contact',

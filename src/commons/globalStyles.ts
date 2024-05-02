@@ -4,7 +4,8 @@ import styled from '@emotion/styled';
 // ! 초기화
 export const GlobalCss = css`
   :root {
-    --background-color-light: #fff;
+    /* --background-color-light: #F6F8F6; */
+    --background-color-light: #FAF9FA;
     --text-color-light: #353638;
     --background-color-dark: #353638;
     --text-color-dark: rgba(255, 255, 255, 0.9);

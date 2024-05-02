@@ -6,10 +6,7 @@ const SectionPage = ({title,Component}:{title:string,Component:JSX.Element}) => 
     return(
         <Wrapper>
             <SectionTitle theme={theme}>{title}</SectionTitle>
-
             {Component}
-            
-            
         </Wrapper>
     )
 }

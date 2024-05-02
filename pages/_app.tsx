@@ -1,5 +1,6 @@
 
 import 'highlight.js/styles/panda-syntax-dark.css';
+import 'react-image-lightbox/style.css';
 // toast editor
 // import 'prismjs/themes/prism.css'; 
 // import '@toast-ui/editor/dist/toastui-editor.css';
