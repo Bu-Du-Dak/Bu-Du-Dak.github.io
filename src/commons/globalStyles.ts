@@ -222,6 +222,9 @@ export const GlobalCss = css`
   strong{
     font-weight: bold;
   }
+  code{
+    border:none !important;
+  }
 `;
 export const Container = styled.div`
   width: 100%;
@@ -251,3 +254,59 @@ export const SmallText = styled.p`
 export const BoldText = styled.span`
   font-weight: bold;
 `;
+export const Divider = styled.div`
+  width:100%;
+  height: 0.5px;
+  background-color: var(--text-color-disabled);
+  margin: 2rem 0;
+`
+export const CHIP_STYLES = {
+  "Next.js":{
+      color:'#fff',
+      backgroundColor:'#000'
+  },
+  "TypeScript":{
+      color:'#fff',
+      backgroundColor:'#3178c6'
+  },
+  "Apollo-client":{
+      color:'#000',
+      backgroundColor:'#fff'
+  },
+  "graphQL":{
+      color:'#fff',
+      backgroundColor:'#DD34A6'
+  },
+  "RestAPI":{
+      color:'#fff',
+      backgroundColor:'#DC880E'
+  },
+  "Axios":{
+      color:'#fff',
+      backgroundColor:'#844195'
+  },
+  "recoil":{
+      color:'#fff',
+      backgroundColor:'#0076ED'
+  },
+  "contextAPI":{
+      color:'#000',
+      backgroundColor:'#64ECF0'
+  },
+  "Docker":{
+      color:'#fff',
+      backgroundColor:'#0A97E5'
+  },
+  "socketIO":{
+      color:'#fff',
+      backgroundColor:'#6CA2F6'
+  },
+  "monacoEditor":{
+      color:'#fff',
+      backgroundColor:'#582C8E'
+  },
+  "agoraRTC":{
+      color:'#fff',
+      backgroundColor:'#0A97F5'
+  },
+}

@@ -1,4 +1,3 @@
-
 import 'highlight.js/styles/panda-syntax-dark.css';
 import 'react-image-lightbox/style.css';
 // toast editor
