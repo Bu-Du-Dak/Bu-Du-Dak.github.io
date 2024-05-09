@@ -24,9 +24,8 @@ export const SectionTitle = styled.h3`
   border-bottom: 0.5px solid var(--text-color-disabled);
   font-size: 1.875rem;
   font-weight: 500;
-  padding: 10px 0 15px 0;
+  padding: 2rem;
   margin-bottom: 30px;
-
   background: ${({ theme }) =>
     theme === 'dark'
       ? 'linear-gradient(45deg, #f9f295, #e0aa3e, #b88a44, #f9f295)'

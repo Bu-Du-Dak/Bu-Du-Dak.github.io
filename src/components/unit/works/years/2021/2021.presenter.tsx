@@ -9,7 +9,7 @@ const Year2021UI = ({imageOpen,setImageOpen,onClickImage}) => {
             {imageOpen &&
                 <Lightbox mainSrc={imageOpen} onCloseRequest={()=>{setImageOpen('')}}/>
             }
-            <Article text={WORKS_TEXT_2021[1]} subContent={<ImageBox width="30rem" imagePath="/images/codeCamp.png"/>}/>
+            <Article text={WORKS_TEXT_2021[1]} subContent={<ImageBox width="20rem" imagePath="/images/codeCamp.png"/>}/>
             <Article text={WORKS_TEXT_2021[2]} subContent={<ImageBox onClick={onClickImage} imagePath="/images/app.png" description={`<span style="font-size:.9rem;" >github에서 보려면 <a href="https://github.com/Bu-Du-Dak/Project_72" target="_blank" style="text-decoration:none; color:var(--selected-text-color);">여기</a></span>`}/>} reverse/>
             <ImageBox imagePath="/images/flow.png" onClick={onClickImage}/>
             <Article text={WORKS_TEXT_2021[3]}/>

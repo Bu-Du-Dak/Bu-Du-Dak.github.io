@@ -160,7 +160,7 @@ export const GlobalCss = css`
     .container {
       min-width: 360px;
       @media (min-width:420px){
-        width:400px;
+        width:360px;
         padding:10px;
       }
       @media (min-width: 768px) {
@@ -228,7 +228,7 @@ export const GlobalCss = css`
 `;
 export const Container = styled.div`
   width: 100%;
-  min-width: 400px;
+  min-width: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +271,7 @@ export const CHIP_STYLES = {
   },
   "Apollo-client":{
       color:'#000',
-      backgroundColor:'#fff'
+      backgroundColor:'#eaeaea'
   },
   "graphQL":{
       color:'#fff',
@@ -309,4 +309,8 @@ export const CHIP_STYLES = {
       color:'#fff',
       backgroundColor:'#0A97F5'
   },
+  "styled-component":{
+    color:'#fff',
+    backgroundColor:'#D271AB'
+  }
 }

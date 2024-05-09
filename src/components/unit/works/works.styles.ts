@@ -5,7 +5,6 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 2rem 0;
-    
 `
 export const StackWrapper = styled.div`
     display:flex;
@@ -23,4 +22,18 @@ export const StackChips = styled.div<{backgroundColor:string,color:string}>`
     border-radius: 10px;
     background-color: ${props=>props.backgroundColor};
     color:${(props=>props.color)};
+`
+export const FlexBox = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    @media (min-width: 768px) {
+        align-items: start;
+		flex-direction: column;
+	}
+    @media (min-width: 992px){
+        flex-direction: row;
+    }
 `
