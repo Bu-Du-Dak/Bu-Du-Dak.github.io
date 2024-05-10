@@ -161,7 +161,6 @@ export const GlobalCss = css`
       min-width: 360px;
       @media (min-width:420px){
         width:360px;
-        padding:10px;
       }
       @media (min-width: 768px) {
         width: 750px;
@@ -243,6 +242,12 @@ export const SubTitle = styled.h2`
   font-weight: lighter;
   font-size: 1.25rem;
 `;
+export const ArticleTitle = styled.h3`
+  line-height: 2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: pre-wrap;
+`
 export const NormalText = styled.p`
   line-height: 2;
   font-size: 1rem;

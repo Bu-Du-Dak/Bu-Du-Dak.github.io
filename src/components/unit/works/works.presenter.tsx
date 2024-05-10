@@ -11,10 +11,12 @@ const WorksUI = ({year}) => {
             case '2023': return <Year2023/>
             case '2022': return <Year2022/>
             case '2021': return <Year2021/>
+            default:
+                return <>Loading...</>
         }
     }
     return(
-        <SectionPage title={`부리가 두꺼운 닭의 ${year}년`} Component={getComponent()}/>
+        <SectionPage title={`부리가 두꺼운 닭의 ${year}년`} Component={getComponent()||<>loading</>}/>
     )
 }
 export default WorksUI

@@ -19,7 +19,7 @@ const DarkBackgroundImage = () => {
 const CoverGlass = styled.div`
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
 `;
 const Background = styled.div`
@@ -29,7 +29,7 @@ const Background = styled.div`
   left: 0;
   top: 0;
   z-index: -1;
-  background-image: url('images/view.jpg');
+  background-image: url('/images/view.jpg');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;

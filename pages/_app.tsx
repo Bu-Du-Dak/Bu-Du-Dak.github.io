@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       <Global styles={GlobalCss} />
       <ThemeProvider
         attribute="class"
-        defaultTheme="light"
+        defaultTheme="dark"
         enableSystem
         disableTransitionOnChange
       >

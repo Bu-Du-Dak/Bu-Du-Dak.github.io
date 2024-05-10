@@ -1,9 +1,10 @@
-export const ContentsText = {
-  AboutMe: `
-    예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트예시 텍스트 예시 텍스트 예시 텍스트
-    예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트 예시 텍스트예시 텍스트 예시 텍스트 예시 텍스트
+export const HOME_TEXT = {
+    intro:`2020년 단골 손님의 노트북 화면을 처음 보게 된 뒤로 지금까지 웹 개발에 푹 빠진 홍재훈입니다.
+    코딩 부트캠프를 시작으로 현재는 <strong style="color:var(--selected-text-color)">Reable(EAN Technology)에서 개발팀 리드로 근무</strong>하고 있습니다.
+    가독성이 좋은 깔끔한 코드를 지향하며 건설적 비판을 통해 한층 더 발전하려 노력합니다.
+    (사이트 내 문제점이나 블로그 작성 글 내 잘못된 내용이 있다면 언제든 말씀 부탁드립니다!)
     `,
-};
+}
 export const WORKS_TEXT_2021 = {
   1: `2021년도 7월부터 9월까지 코드캠프에서 프론트엔드 코스를 수강하며 <strong style="color:var(--selected-text-color)">Next.js</strong>와 <strong style="color:var(--selected-text-color)">grpahQL</strong>에 관해 공부하였고, 마지막 팀 프로젝트에서는 <strong style="color:var(--selected-text-color)">ReactNative</strong>를 사용하여 앱을 구현하였습니다.`,
   2: `3명의 프론트엔드로 구성된 팀이었고, 캠프에서 제공하는 기본적인 CRUD API를 활용하여 만들 수 있는 서비스를 구현해야 했는데 운이 좋게 저의 아이디어가 채택되어 <strong style="color:var(--selected-text-color)">애견 산책 매칭 서비스</strong>를 구현하게 되었습니다.
@@ -326,3 +327,10 @@ const fetchGresbData = async (variables:Array<String>) => {
     }
   }`,
 };
+export const WORKS_TEXT_2024 = {
+    1:`4월에 NZT를 담당하던 PM이 퇴사를 하시고 새로운 PM이 오시게 되었습니다. 새로운 분과 새로운 마음으로 새 기능을 추가하게 되었는데, 건물 데이터 엑셀 다운로드였습니다.
+    `, // 이거 23년으로 옮기는거 고려 필요
+    2:`다운로드 관련 작업 진행 중...`
+    // 백엔드 시작하는 내용 + io 사이트 제작 내용
+    //일하는 방식 (노션 캘린더) 등 추가
+}

@@ -1,12 +1,11 @@
-import { useRouter } from "next/router"
 import WorksUI from "./works.presenter"
 
-const Works = () => {
-    const router = useRouter()
-    return(
-        <WorksUI
-            year = {router.query.year}
-        />
-    )
+const Works = ({year}) => {
+        return(
+            <WorksUI
+                year = {year}
+            />
+        )
+    
 }
 export default Works

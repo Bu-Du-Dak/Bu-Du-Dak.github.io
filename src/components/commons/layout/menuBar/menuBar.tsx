@@ -42,12 +42,12 @@ const Wrapper = styled.header`
   justify-content: space-between;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-color: var(--background-color);
-  opacity: 0.9;
   top: 0;
   position: sticky;
   animation: ${({ scrollDirection }: { scrollDirection: string }) =>
       scrollDirection === 'up' ? slideDown : slideUp}
     0.5s ease-in-out forwards;
+  z-index: 2;
 `;
 const Title = styled.h1`
   font-size: 1.2rem;
