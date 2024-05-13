@@ -18,8 +18,8 @@ export const StackChips = styled.div<{backgroundColor:string,color:string}>`
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 8px;
+    border-radius: 8px;
     background-color: ${props=>props.backgroundColor};
     color:${(props=>props.color)};
 `

@@ -1,20 +1,20 @@
 import Lightbox from "react-image-lightbox"
 import { WORKS_TEXT_2023 } from "../../../../../commons/ContentsText"
-import { ArticleTitle, CHIP_STYLES, Divider, NormalText } from "../../../../../commons/globalStyles"
+import { ArticleTitle, CHIP_STYLES, Divider } from "../../../../../commons/globalStyles"
 import ImageBox from "../../../../commons/ImageBox"
 import Article from "../../../article/article.index"
 import CodeBlock from "../../../codeBlock/codeBlock.index"
 import { FlexBox, StackChips, StackWrapper } from "../../works.styles"
 
 const Year2023UI = ({imageOpen,setImageOpen,onClickImage}) => {
-    const NZT_CHIPS = ['Next.js','TypeScript','Axios','RestAPI','Apollo-client','graphQL','Docker','styled-component']
+    const NZT_CHIPS = ['TypeScript','React','Next.js','Axios','RestAPI','Apollo-client','graphQL','Docker','emotion','Jest']
     return(
         <>
             {imageOpen &&
                 <Lightbox mainSrc={imageOpen} onCloseRequest={()=>{setImageOpen('')}}/>
             }
             <Article text={WORKS_TEXT_2023[1]} subContent={<ImageBox imagePath="/images/reable.jpg" description={`<span style="font-size:.9rem;">Reable 더 자세히 보려면 <a href="https://www.reable.ai/" target="_blank" style="text-decoration:none; color:var(--selected-text-color);">여기</a></span>`}/>}/>
-            <Divider/>
+            <Divider id="nzt"/>
             <ImageBox imagePath="/images/NZTLogo.png" width="20rem"/>
             <StackWrapper>
                 {NZT_CHIPS.map((e)=>(
@@ -27,7 +27,7 @@ const Year2023UI = ({imageOpen,setImageOpen,onClickImage}) => {
             <Article text={WORKS_TEXT_2023[5]} subContent={<ImageBox onClick={onClickImage} imagePath="/images/NZTHome.png" description="전체보기 화면"/>}/>
             <Divider/>
             <Article text={WORKS_TEXT_2023[6]} subContent={<ImageBox onClick={onClickImage} imagePath="/images/coFlow.jpeg" description="다른 분들 성함은 모자이크"/>} reverse/>
-            <Divider/>
+            <Divider />
             <ArticleTitle>GRESB</ArticleTitle>
             <Article text={WORKS_TEXT_2023[7]}/>
             <Article text={WORKS_TEXT_2023[8]} subContent={<ImageBox  onClick={onClickImage} imagePath="/images/diagram.jpg"/>} reverse/>

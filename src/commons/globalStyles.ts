@@ -265,10 +265,23 @@ export const Divider = styled.div`
   background-color: var(--text-color-disabled);
   margin: 2rem 0;
 `
+export const DashedDivider = styled.div`
+  width: 100%;
+  height: .1rem;
+  background-image: linear-gradient(to right, var(--text-color-disabled) 33%, rgba(255,255,255,0) 0%);
+  background-position: top;
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  margin: 3rem 0;
+`;
 export const CHIP_STYLES = {
   "Next.js":{
       color:'#fff',
       backgroundColor:'#000'
+  },
+  "React":{
+    color:'#08D9FF',
+    backgroundColor:'#000'
   },
   "TypeScript":{
       color:'#fff',
@@ -314,8 +327,12 @@ export const CHIP_STYLES = {
       color:'#fff',
       backgroundColor:'#0A97F5'
   },
-  "styled-component":{
+  "emotion":{
     color:'#fff',
     backgroundColor:'#D271AB'
+  },
+  "Jest":{
+    color:'#C8431B',
+    backgroundColor:'#fff'
   }
 }

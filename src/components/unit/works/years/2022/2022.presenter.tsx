@@ -1,14 +1,14 @@
 import Lightbox from "react-image-lightbox"
 import { WORKS_TEXT_2022 } from "../../../../../commons/ContentsText"
-import { ArticleTitle, CHIP_STYLES, Divider, NormalText, SmallText, } from "../../../../../commons/globalStyles"
+import { ArticleTitle, CHIP_STYLES, Divider, SmallText, } from "../../../../../commons/globalStyles"
 import ImageBox from "../../../../commons/ImageBox"
 import Article from "../../../article/article.index"
 import CodeBlock from "../../../codeBlock/codeBlock.index"
 import { StackChips, StackWrapper } from "../../works.styles"
 const Year2022UI = ({imageOpen,setImageOpen,onClickImage}) => {
-    const EDITOR_CHIPS=['Next.js','TypeScript','Axios','RestAPI','socketIO','monacoEditor','agoraRTC','styled-component']
-    const DINGCO_CHIPS = ['Next.js','TypeScript','recoil','Apollo-client','graphQL','Docker','styled-component']
-    const BOOTCAMP_CHIPS = ['Next.js','TypeScript','contextAPI','Apollo-client','graphQL','Docker','styled-component']
+    const EDITOR_CHIPS=['TypeScript','React','Next.js','Axios','RestAPI','socketIO','monacoEditor','agoraRTC','emotion']
+    const DINGCO_CHIPS = ['TypeScript','React','Next.js','recoil','Apollo-client','graphQL','Docker','emotion']
+    const BOOTCAMP_CHIPS = ['TypeScript','React','Next.js','contextAPI','Apollo-client','graphQL','Docker','emotion']
     return(
         <>
             {imageOpen &&
