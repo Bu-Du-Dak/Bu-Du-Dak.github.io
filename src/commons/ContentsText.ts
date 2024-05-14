@@ -9,7 +9,8 @@ export const HOME_TEXT = {
     <div style="width:fit-content; font-size:1rem; padding:.5rem 0;">Lead / Front-end</div>
     <div style="font-size:1rem;">2023.05 ~ 현재</div>
     `,
-  description_2023: `B2B 서비스로`,
+  description_2023: `B2B 서비스로 자산의 탄소 배출량을 추적하고 관리하는 서비스 입니다.
+  사용자 페이지 내 문서를 제외한 모든 배너와 관리자 페이지 전체를 담당하였습니다.`,
   myWorks_2023: `<div style="display:flex; flex-direction:column; gap: .5rem;">
   <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>공통 컴포넌트 구축</span></div>
   <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>레이아웃 인터페이스 개선</span></div>
@@ -22,9 +23,109 @@ export const HOME_TEXT = {
   title_2022: `<div style="font-size:2.2rem; margin-bottom:1rem; font-weight:bold;">DingCo<span style="color:var(--selected-text-color);">.</span></div>
 <div style="font-size:1rem; padding:.5rem 0;">Front-end</div>
 <div style="font-size:1rem;">2021.10 ~ 2023.04</div>`,
-  2022: ``,
-  title_2021: ``,
-  2021: ``,
+  description_2022_1: `딩코 수강생들이 알고리즘 문제를 실시간으로 함께 해결할 수 있도록 지원합니다. <strong style="color:var(--selected-text-color)">화상과 음성 대화 기능</strong>이 포함되어 있어, 
+멘토와 직접 소통하며 문제를 풀어볼 수 있습니다. 또한, <strong style="color:var(--selected-text-color)">하나의 코드 에디터를 통해 두 사람이 동시에</strong> 문제를 풀어보고 해결 방법을 공유할 수 있습니다.
+완성 이후 구름 에듀에게 소스코드를 전달하게 되었습니다.`,
+  myWorks_2022_1: `<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>agoraRTC를 사용한 화상/음성 연결</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>toastEditor를 사용한 알고리즘 문제출력 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>socketIO를 사용한 실시간 코드 감지 및 코드 테스팅 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>vimeo를 통한 알고리즘 해설 영상 연결</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>다크 모드/라이트 모드 변경 기능 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>부하 방지를 위해 micro frontend 형태로 구조 분리</span></div>
+</div>
+  `,
+  description_2022_2: `코딩 부트캠프에서 가르치는 내용을 온라인으로 수강할 수 있도록 인터넷 강의 서비스를 구현하였습니다.
+  KDT 선정을 목표로 하였고 <strong style="color:var(--selected-text-color)">인프런과 협업</strong>하여 사이트를 운영하였습니다.
+  `,
+  myWorks_2022_2: `<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>강의 및 수강생 관리 어드민 페이지 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>강의 소개 페이지 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>수강생 간 소통 페이지 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>vimeo hook을 통한 진도율 및 완강 확인 처리 구현</span></div>
+</div>
+  `,
+  description_2022_3: `인터넷 강의를 통한 온라인 부트캠프로 서비스 내 수강생 관리에 초점을 맞춘 어드민 페이지를 담당하였습니다.
+  `,
+  myWorks_2022_3: `<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>강의 영상 및 강의 자료 등록 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>수강생 및 관리자 권한 관리 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>권한에 따른 접근 제한 구현</span></div>
+</div>
+  `,
+  title_personal: `<div style="font-size:2.2rem; margin-bottom:1rem; font-weight:bold;">Personal Work<span style="color:var(--selected-text-color);">.</span></div>
+  <div style="font-size:1rem; padding:.5rem 0;">Front-end / Back-end</div>
+  <div style="font-size:1rem;">2021.10 ~ 현재</div>
+  `,
+  description_personal_1: `백엔드 실습을 위해, 개인 포트폴리오 겸 블로그를 <strong style="color:var(--selected-text-color)">TypeScript와 Next.js를 사용하여 구축</strong>했습니다. 
+  백엔드는 <strong style="color:var(--selected-text-color)">Python과 django</strong>로 개발하였으며, <strong style="color:var(--selected-text-color)">GitHub Actions를 통해 배포</strong>를 자동화하였습니다.
+  `,
+  myWorks_personal_1: `<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>NextJs를 통한 화면 구축</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>GithubAction을 통한 CI 환경 구축</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Python / django를 사용한 블로그 기능 생성</span></div>
+</div>
+  `,
+  description_personal_2: `코드캠프 팀 프로젝트로 애견 산책 매칭 서비스를 개발했습니다.
+  <strong style="color:var(--selected-text-color)">ReactNative를 사용한 App</strong>형태로, 사용자의 위치 반경 내에서 함께 산책을 원하는 다른 사용자를 찾아 매칭해줍니다.
+  `,
+  myWorks_personal_2: `<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>전체 디자인 및 기획 총괄</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>초기 구조 구축 및 공통 컴포넌트 구현</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>초기 로딩 화면 및 홈, 마켓 페이지 구현</span></div>
+</div>
+  `,
+  skills_web: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">Web<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>반응형 디자인에 맞춰 화면을 구현할 수 있습니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>다양한 트러블 슈팅 경험이 있습니다.</span></div>
+</div>
+  `,
+  skills_devOps: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">DevOps<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Github Action을 통한 CI 구축이 가능합니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Jest를 활용한 유닛 테스트 진행이 가능합니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Docker / Docker-compose를 통한 배포에 익숙합니다.</span></div>
+</div>
+  `,
+  skills_typescript: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">JavScript / TypeScript<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>ES2015 이상의 문법에 능숙합니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>async await / promise 를 활용한 비동기 작업 처리에 익숙합니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>확장성을 고려한 타입 설계를 할 수 있습니다.</span></div>
+</div>
+  `,
+  skills_react: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">React / Next<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>확장성 있는 공통 컴포넌트 제작에 능숙합니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>다양한 디자인 패턴을 적용할 수 있습니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>hook 형태의 공통 로직 모듈화를 할 수 있습니다.</span></div>
+  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>함수형 컴포넌트 제작에 능숙합니다.</span></div>
+</div>
+  `,
+  end: `저는 이걸 보고 계신 분과 함께 일하고 싶어요! 
+  많은 장점을 가지고 있는데 그중 몇 가지를 추려봤어요. 부족한 부분이 많아 보일 수 있지만 그래도 어필해볼게요
+<div style="display:flex; flex-direction:column; gap: .5rem;">
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>저랑 일하면 즐거울 거예요</span></div>
+<span>만약 하루 시작이 힘들고 기분이 안 좋더라도 즐겁게 일하실 수 있게 재롱이라도 부립니다.
+그마저 안된다면 맛있는 거라도 드리겠습니다.</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>흔적을 남겨요</span></div>
+<span>매일 진행해야 할 업무를 기록하고 우선순위를 매겨 단계 별로 진행합니다. 
+한 달이 지나고 그달의 잘한 점과 개선할 점을 찾습니다. 업무 기록으로 가득 찬 달력을 보며 뿌듯해합니다.
+</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>적응을 잘해요</span></div>
+<span>다른 사람의 코드를 읽는 능력이 좋고 급변하는 개발 시장에서 새로운 기술을 습득하는데 거부감이 없습니다.
+주어진 환경에 잘 적응하고 개선해 나갈 수 있는 방안을 끊임없이 연구합니다.</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>유연한 사고와 소통에 능해요</span></div>
+<span>다양한 시각에서 문제를 바라보고 해결하는 것을 좋아합니다. 
+다른 사람의 의견을 존중하고 틀린 의견으로 보기보다 다른 의견으로 받아들여 절충안을 찾아봅니다.</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>협업을 좋아해요</span></div>
+  <span>회사에서 혼자 일하는 건 없다고 생각하며 함께 일하여 결과물을 만들어내면 뿌듯합니다.
+동료들과의 커뮤니케이션은 좋은 결과를 가져온다고 믿습니다.</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>책임감이 강해요</span></div>
+  <span>제가 맡은 일은 꼭 완벽하게 해내려 합니다.
+부족한 부분이 생기면 노력해서 어제보다 나은 오늘의 모습을 보여줄 수 있습니다.</span>
+  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>늘 간절해요</span></div>
+  <span>무슨 일이든 시작하면 제가 제일 잘하고 싶고 잘하기 위해서 무슨 일이든 할 겁니다.</span>
+</div>
+
+  `,
 };
 export const WORKS_TEXT_2021 = {
   1: `2021년도 7월부터 9월까지 코드캠프에서 프론트엔드 코스를 수강하며 <strong style="color:var(--selected-text-color)">Next.js</strong>와 <strong style="color:var(--selected-text-color)">grpahQL</strong>에 관해 공부하였고, 마지막 팀 프로젝트에서는 <strong style="color:var(--selected-text-color)">ReactNative</strong>를 사용하여 앱을 구현하였습니다.`,
@@ -59,8 +160,7 @@ export const WORKS_TEXT_2022 = {
     `,
   4: `프론트엔드 3명과 백엔드 2명이 <strong style="color:var(--selected-text-color)">2021년 12월부터 2022년 7월까지 개발</strong>하고, <strong style="color:var(--selected-text-color)">2023년 3월까지 운영</strong>하였습니다.
     KDT를 목표로 수강생 및 강의 관리 페이지 제작 그리고 실시간 양방향 코드 에디터 제작이 주된 작업이었습니다.
-    `,
-  5: `어드민 페이지 작업을 주로 맡아서 작업 자체에는 문제가 없었지만, 열심히 노력했음에도 불구하고 국비 교육 기관 선정에 실패한 것이 가장 힘들었습니다. 그렇지만 실시간 화상 에디터는 구름 에듀에 잘 전달했다는 점에서 위로 받았었습니다.
+    어드민 페이지 작업을 주로 맡아서 작업 자체에는 문제가 없었지만, 열심히 노력했음에도 불구하고 국비 교육 기관 선정에 실패한 것이 가장 힘들었습니다. 그렇지만 실시간 화상 에디터는 구름 에듀에 잘 전달했다는 점에서 위로 받았었습니다.
     `,
   6: `프론트엔드 1명과 백엔드 1명이 <strong style="color:var(--selected-text-color)">2022년 9월부터 12월까지 개발</strong>한 실시간 알고리즘 풀이 서비스로 가장 먼저 보여드리고 싶은 작업물입니다.
     혼자서 알고리즘을 풀어보고, 제공되는 <strong style="color:var(--selected-text-color)">풀이 영상</strong>을 재생할 수도 있고 멘토에게 도움 요청을 보내 <strong style="color:var(--selected-text-color)">화상 통화를 진행하며 하나의 코드 에디터를 함께 사용</strong>하여 문제를 해결할 수 있습니다.

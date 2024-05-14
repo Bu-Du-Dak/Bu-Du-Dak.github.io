@@ -283,6 +283,10 @@ export const CHIP_STYLES = {
     color:'#08D9FF',
     backgroundColor:'#000'
   },
+  "ReactNative":{
+    color:'#08D9FF',
+    backgroundColor:'#000'
+  },
   "TypeScript":{
       color:'#fff',
       backgroundColor:'#3178c6'
@@ -334,5 +338,13 @@ export const CHIP_STYLES = {
   "Jest":{
     color:'#C8431B',
     backgroundColor:'#fff'
+  },
+  "Python":{
+    color:'#447EAF',
+    backgroundColor:'#F9C843'
+  },
+  "django":{
+    color:'#fff',
+    backgroundColor:"#113527"
   }
 }

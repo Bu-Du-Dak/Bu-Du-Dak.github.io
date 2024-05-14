@@ -58,4 +58,5 @@ export const SubContents = styled.div`
   width: 100%;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  line-height: 1.5rem;
 `;

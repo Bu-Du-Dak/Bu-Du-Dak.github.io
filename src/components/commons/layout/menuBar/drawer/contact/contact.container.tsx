@@ -1,6 +1,6 @@
 import ContactUI from "./contact.presenter"
 import {message} from 'antd'
-const Contact = () => {
+const Contact = ({noTitle}:{noTitle?:boolean}) => {
     const [messageApi,contextHolder]=message.useMessage()
     const onClickItems = (id:string) => {
         if(id==='email') {
@@ -15,7 +15,7 @@ const Contact = () => {
     return(
         <>
         {contextHolder}
-        <ContactUI onClickItems={onClickItems}/>
+        <ContactUI noTitle={noTitle} onClickItems={onClickItems}/>
         </>
     )
 }

@@ -22,7 +22,9 @@ const FootPrintsUI = ({ title,routeEvent, contents }) => {
           }
         </S.SubContents>
         <S.SubContentsTitle>Description</S.SubContentsTitle>
-        <S.SubContents>{contents.description}</S.SubContents>
+        <S.SubContents>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{contents.description}</ReactMarkdown>
+        </S.SubContents>
         <S.SubContentsTitle>My Work</S.SubContentsTitle>
         <S.SubContents>
           <ReactMarkdown rehypePlugins={[rehypeRaw]}>

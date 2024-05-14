@@ -5,7 +5,7 @@ import Article from "../../../article/article.index"
 import * as S from '../../works.styles'
 const Year2021UI = ({imageOpen,setImageOpen,onClickImage}) => {
     return(
-        <S.Container>
+        <S.Container id='native'>
             {imageOpen &&
                 <Lightbox mainSrc={imageOpen} onCloseRequest={()=>{setImageOpen('')}}/>
             }
