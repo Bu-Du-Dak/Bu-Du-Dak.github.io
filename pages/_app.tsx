@@ -19,8 +19,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <link rel="preload" href="https://bu-du-dak.github.io/" as="script" />
-      <link rel="prefetch" href="https://bu-du-dak.github.io/" />
       <title>부두닭의 개발기록</title>
       <meta name="title" content="부두닭의 개발기록" />
       <meta
@@ -46,7 +44,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="twitter:description" content="부두닭이 만든 개발 기록용 사이트입니다." />
       <meta
           name="keywords"
-          content="부두닭,bududak,타입스크립트,typescript,자바스크립트,javascript,리액트,react,넥스트,next,파이썬,python,장고,django,백엔드,프론트엔드"
+          content="부두닭,bududak,bu-du-dak,타입스크립트,typescript,자바스크립트,javascript,리액트,react,넥스트,next,파이썬,python,장고,django,백엔드,프론트엔드"
         />
     </Head>
       <Global styles={GlobalCss} />

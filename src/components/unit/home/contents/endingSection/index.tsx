@@ -10,7 +10,7 @@ const EndingSection = ({itemArr}) => {
           많은 장점을 가지고 있는데 그중 몇 가지를 추려봤어요. 부족한 부분이 많아 보일 수 있지만 그래도 어필해볼게요.
         </Text>
         {itemArr.map((e)=>(
-        <Item>
+        <Item key={e.title}>
             <ItemTitle><span className='dot'/>{e.title}</ItemTitle>
                 <ItemContents>
                     <ReactMarkdown rehypePlugins={[rehypeRaw]}>{e.content}</ReactMarkdown>    
