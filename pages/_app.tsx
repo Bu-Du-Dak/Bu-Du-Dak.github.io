@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <link rel="preload" href="/path_to_important_resource" as="script" />
-      <link rel="prefetch" href="/path_to_future_resource" />
+      <link rel="preload" href="https://bu-du-dak.github.io/" as="script" />
+      <link rel="prefetch" href="https://bu-du-dak.github.io/" />
       <title>부두닭의 개발기록</title>
       <meta name="title" content="부두닭의 개발기록" />
       <meta

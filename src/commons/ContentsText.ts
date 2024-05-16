@@ -75,57 +75,61 @@ export const HOME_TEXT = {
   <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>초기 로딩 화면 및 홈, 마켓 페이지 구현</span></div>
 </div>
   `,
-  skills_web: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">Web<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>반응형 디자인에 맞춰 화면을 구현할 수 있습니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>다양한 트러블 슈팅 경험이 있습니다.</span></div>
-</div>
-  `,
-  skills_devOps: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">DevOps<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Github Action을 통한 CI 구축이 가능합니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Jest를 활용한 유닛 테스트 진행이 가능합니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>Docker / Docker-compose를 통한 배포에 익숙합니다.</span></div>
-</div>
-  `,
-  skills_typescript: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">JavScript / TypeScript<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>ES2015 이상의 문법에 능숙합니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>async await / promise 를 활용한 비동기 작업 처리에 익숙합니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>확장성을 고려한 타입 설계를 할 수 있습니다.</span></div>
-</div>
-  `,
-  skills_react: `<div style="font-size:1.5rem; margin-bottom:1rem; font-weight:bold;">React / Next<span style="color:var(--selected-text-color);">.</span></div><div style="display:flex; flex-direction:column; gap: .5rem;">
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>확장성 있는 공통 컴포넌트 제작에 능숙합니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>다양한 디자인 패턴을 적용할 수 있습니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>hook 형태의 공통 로직 모듈화를 할 수 있습니다.</span></div>
-  <div style="display:flex; align-items:center;gap:.5rem;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>함수형 컴포넌트 제작에 능숙합니다.</span></div>
-</div>
-  `,
-  end: `저는 이걸 보고 계신 분과 함께 일하고 싶어요! 
-  많은 장점을 가지고 있는데 그중 몇 가지를 추려봤어요. 부족한 부분이 많아 보일 수 있지만 그래도 어필해볼게요
-<div style="display:flex; flex-direction:column; gap: .5rem;">
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>저랑 일하면 즐거울 거예요</span></div>
-<span>만약 하루 시작이 힘들고 기분이 안 좋더라도 즐겁게 일하실 수 있게 재롱이라도 부립니다.
-그마저 안된다면 맛있는 거라도 드리겠습니다.</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>흔적을 남겨요</span></div>
-<span>매일 진행해야 할 업무를 기록하고 우선순위를 매겨 단계 별로 진행합니다. 
-한 달이 지나고 그달의 잘한 점과 개선할 점을 찾습니다. 업무 기록으로 가득 찬 달력을 보며 뿌듯해합니다.
-</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>적응을 잘해요</span></div>
-<span>다른 사람의 코드를 읽는 능력이 좋고 급변하는 개발 시장에서 새로운 기술을 습득하는데 거부감이 없습니다.
-주어진 환경에 잘 적응하고 개선해 나갈 수 있는 방안을 끊임없이 연구합니다.</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>유연한 사고와 소통에 능해요</span></div>
-<span>다양한 시각에서 문제를 바라보고 해결하는 것을 좋아합니다. 
-다른 사람의 의견을 존중하고 틀린 의견으로 보기보다 다른 의견으로 받아들여 절충안을 찾아봅니다.</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>협업을 좋아해요</span></div>
-  <span>회사에서 혼자 일하는 건 없다고 생각하며 함께 일하여 결과물을 만들어내면 뿌듯합니다.
-동료들과의 커뮤니케이션은 좋은 결과를 가져온다고 믿습니다.</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>책임감이 강해요</span></div>
-  <span>제가 맡은 일은 꼭 완벽하게 해내려 합니다.
-부족한 부분이 생기면 노력해서 어제보다 나은 오늘의 모습을 보여줄 수 있습니다.</span>
-  <div style="display:flex; align-items:center;gap:.5rem; font-weight:bold;"><div style="width:.3rem;height:.3rem;background-color:var(--selected-text-color);border-radius:1rem;"></div><span>늘 간절해요</span></div>
-  <span>무슨 일이든 시작하면 제가 제일 잘하고 싶고 잘하기 위해서 무슨 일이든 할 겁니다.</span>
-</div>
-
-  `,
+  skills_web: [
+    '반응형 디자인에 맞춰 화면을 구현할 수 있습니다.',
+    '다양한 트러블 슈팅 경험이 있습니다.',
+  ],
+  skills_devOps: [
+    'Github Action을 통한 CI 구축이 가능합니다.',
+    'Jest를 활용한 유닛 테스트 진행이 가능합니다.',
+    'Docker / Docker-compose를 통한 배포에 익숙합니다.',
+  ],
+  skills_typescript: [
+    'ES2015 이상의 문법에 능숙합니다.',
+    'async await / promise 를 활용한 비동기 작업 처리에 익숙합니다.',
+    '확장성을 고려한 타입 설계를 할 수 있습니다.',
+  ],
+  skills_react: [
+    '확장성 있는 공통 컴포넌트 제작에 능숙합니다.',
+    '다양한 디자인 패턴을 적용할 수 있습니다.',
+    'hook 형태의 공통 로직 모듈화를 할 수 있습니다.',
+    '함수형 컴포넌트 제작에 능숙합니다.',
+  ],
+  end: [
+    {
+      title: '저랑 일하면 즐거울 거예요',
+      content: `만약 하루 시작이 힘들고 기분이 안 좋더라도 즐겁게 일하실 수 있게 <strong style="color:var(--selected-text-color)">재롱</strong>이라도 부립니다.<br/>그마저 안된다면 <strong style="color:var(--selected-text-color)">맛있는 거</strong>라도 드리겠습니다.`,
+    },
+    {
+      title: `흔적을 남겨요`,
+      content: `매일 진행해야 할 업무를 기록하고 <strong style="color:var(--selected-text-color)">우선순위</strong>를 매겨 <strong style="color:var(--selected-text-color)">단계 별로 진행</strong>합니다.<br/>
+    한 달이 지나고 그달의 <strong style="color:var(--selected-text-color)">잘한 점</strong>과 <strong style="color:var(--selected-text-color)">개선할 점</strong>을 찾습니다.</br>업무 기록으로 가득 찬 달력을 보며 뿌듯해합니다.`,
+    },
+    {
+      title: `적응을 잘해요`,
+      content: `다른 사람의 <strong style="color:var(--selected-text-color)">코드를 읽는 능력</strong>이 좋고 급변하는 개발 시장에서 <strong style="color:var(--selected-text-color)">새로운 기술을 습득</strong>하는데 거부감이 없습니다.</br>
+    주어진 <strong style="color:var(--selected-text-color)">환경에 잘 적응</strong>하고 <strong style="color:var(--selected-text-color)">개선해 나갈 수 있는 방안을 끊임없이 연구</strong>합니다.`,
+    },
+    {
+      title: `유연한 사고와 소통에 능해요`,
+      content: `<strong style="color:var(--selected-text-color)">다양한 시각에서 문제를 바라보고 해결하는 것</strong>을 좋아합니다.<br/>
+    다른 사람의 의견을 존중하고 틀린 의견으로 보기보다 다른 의견으로 받아들여 절충안을 찾아봅니다.`,
+    },
+    {
+      title: `협업을 좋아해요`,
+      content: `회사에서 혼자 일하는 건 없다고 생각하며 함께 일하여 결과물을 만들어내면 뿌듯합니다.<br/>
+    동료들과의 <strong style="color:var(--selected-text-color)">커뮤니케이션은 좋은 결과를 가져온다</strong>고 믿습니다.`,
+    },
+    {
+      title: `책임감이 강해요`,
+      content: `제가 <strong style="color:var(--selected-text-color)">맡은 일은 꼭 완벽하게</strong> 해내려 합니다.<br/>
+    부족한 부분이 생기면 노력해서 어제보다 나은 오늘의 모습을 보여줄 수 있습니다.`,
+    },
+    {
+      title: `늘 간절해요`,
+      content: `무슨 일이든 시작하면 제가 제일 잘하고 싶고 <strong style="color:var(--selected-text-color)">잘하기 위해서 무슨 일이든 할 겁니다.</strong>`,
+    },
+  ],
 };
 export const WORKS_TEXT_2021 = {
   1: `2021년도 7월부터 9월까지 코드캠프에서 프론트엔드 코스를 수강하며 <strong style="color:var(--selected-text-color)">Next.js</strong>와 <strong style="color:var(--selected-text-color)">grpahQL</strong>에 관해 공부하였고, 마지막 팀 프로젝트에서는 <strong style="color:var(--selected-text-color)">ReactNative</strong>를 사용하여 앱을 구현하였습니다.`,
