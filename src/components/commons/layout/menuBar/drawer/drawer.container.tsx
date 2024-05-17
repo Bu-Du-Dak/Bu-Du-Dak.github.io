@@ -51,7 +51,7 @@ const MenuDrawer = () => {
       // {
       //  return getItem(e,e)
       // })
-      getItem('백엔드 구축 중', '9', <div>🚧</div>),
+      getItem('백엔드 구축 중', '전체 보기', <div>🚧</div>),
       // getItem('Option 10', '10'),
       // getItem('Option 11', '11'),
       // getItem('Option 12', '12'),

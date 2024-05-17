@@ -5,7 +5,9 @@ const SectionPage = ({title,Component}:{title:string,Component:JSX.Element}) => 
     const {theme}=useTheme()
     return(
         <Wrapper>
-            <SectionTitle theme={theme}>{title}</SectionTitle>
+            <SectionTitle theme={theme}>
+                {title}
+            </SectionTitle>
             {Component}
         </Wrapper>
     )

@@ -26,7 +26,7 @@ const Background = styled.div`
   z-index: -1;
   background-image: url('/images/lightView.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 `;
 export default LightBackgroundImage;

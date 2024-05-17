@@ -35,9 +35,9 @@ const TitleWrapper = styled.div`
   padding: 2rem 0 3rem 0;
   @media (min-width: 768px) {
     text-align: center;
-  }
+  };
   @media (min-width: 992px) {
     text-align: start;
-  }
+  };
 `;
 export default HomeContents;
