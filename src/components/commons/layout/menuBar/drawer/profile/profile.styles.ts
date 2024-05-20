@@ -117,11 +117,11 @@ export const ProfileWrapper = styled.div`
 `;
 export const ProfileDeco = styled.div`
   @media (min-width: 420px) {
-    width: 12rem;
-    height: 12rem;
+    width: 13rem;
+    height: 16rem;
   }
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 11rem;
   border-radius: 2rem;
   background: linear-gradient(
     137deg,
@@ -141,13 +141,14 @@ export const ProfileDeco = styled.div`
 `;
 export const ProfileImage = styled.div`
   @media (min-width: 420px) {
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 15rem;
   }
-  background-image: url('/images/qew.png');
+  background-image: url('/images/logo.png');
   background-size: cover;
-  width: 10rem;
-  height: 10rem;
+  background-position: center;
+  width: 9rem;
+  height: 9.5rem;
   border-radius: 2rem;
 `;
 export const CounterContainer = styled.div`
