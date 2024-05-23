@@ -144,7 +144,7 @@ export const ProfileImage = styled.div`
     width: 14rem;
     height: 15rem;
   }
-  background-image: url('/images/logo.png');
+  background-image: url('https://bududak-s3-bucket.s3.ap-northeast-2.amazonaws.com/logo.png');
   background-size: cover;
   background-position: center;
   width: 9rem;

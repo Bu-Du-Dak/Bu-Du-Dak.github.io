@@ -16,7 +16,7 @@ const ProfileUI = ({ imageOpen,setImageOpen }) => {
         />
       )}
       <S.ProfileContainer>
-        <S.ProfileWrapper onClick={()=>setImageOpen('/images/logo.png')}>
+        <S.ProfileWrapper onClick={()=>setImageOpen('https://bududak-s3-bucket.s3.ap-northeast-2.amazonaws.com/logo.png')}>
           <S.ProfileDeco theme={theme} />
           <S.ProfileImage />
         </S.ProfileWrapper>

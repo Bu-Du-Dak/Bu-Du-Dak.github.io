@@ -29,7 +29,7 @@ const Background = styled.div`
   left: 0;
   top: 0;
   z-index: -1;
-  background-image: url('/images/view.jpg');
+  background-image: url(${() => `${process.env.NEXT_PUBLIC_BUCKET_PATH}/view.jpg`});
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
