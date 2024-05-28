@@ -1,17 +1,24 @@
+import {titleTranslate} from './blogTitleTranslate'
 import SearchInput from '../../../commons/inputs/search';
 import BlogCards from '../cards/blogCards.container';
 import * as S from './blogList.styles';
-const BlogListUI = ({title}:{title:string}) => {
-    const temp = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+const BlogListUI = ({title,data}:{title:string,data:{title:string,categories:string,content:string,id:number,created:Date}[]}) => {
   return (
     <S.Wrapper>
-            <S.BlogTitleWrapper>{title}</S.BlogTitleWrapper>
+            <S.BlogTitleWrapper>{titleTranslate(title)}</S.BlogTitleWrapper>
             <SearchInput/>
         <S.InnerWrapper>
-            {temp.map(e=>(
-                <BlogCards key={e}/>
+            {data?.map(e=>(
+                <BlogCards 
+                    key={e.id+e.title}
+                    id={e.id}
+                    title={e.title}
+                    category={e.categories}
+                    content={e.content}
+                    created={e.created}
+                />
             ))}
-            {temp.length%4 !== 0
+            {data?.length%4 !== 0
             &&
             <>
                 <div style={{width:'20rem'}}/>

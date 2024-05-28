@@ -1,6 +1,6 @@
 import { MenuProps } from 'antd';
 import { useState } from 'react';
-import { BulbOutlined, FormOutlined, UserOutlined } from '@ant-design/icons';
+import { ArrowsAltOutlined, BulbOutlined, FormOutlined, PythonOutlined, UserOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import DrawerUI from './drawer.presenter';
 const MenuDrawer = () => {
@@ -51,8 +51,8 @@ const MenuDrawer = () => {
       // {
       //  return getItem(e,e)
       // })
-      getItem('백엔드 구축 중', '전체보기', <div>🚧</div>),
-      // getItem('Option 10', '10'),
+      getItem('전체보기', 'overall', <ArrowsAltOutlined />),
+      getItem('Python', 'Python',<PythonOutlined />),
       // getItem('Option 11', '11'),
       // getItem('Option 12', '12'),
     ]),

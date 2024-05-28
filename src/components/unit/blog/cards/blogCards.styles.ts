@@ -27,11 +27,13 @@ export const CardImage = styled.div`
 export const CardCategory = styled.div`
   width: fit-content;
   line-height: 0.6rem;
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 0.5rem;
   border-radius: 1rem;
 `;
 export const CardTitle = styled(SubTitle)`
+  font-size: 1.2rem;
+  font-weight: bold;
   width: 100%;
   padding: 0;
   overflow: hidden;

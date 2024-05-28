@@ -346,5 +346,9 @@ export const CHIP_STYLES = {
   "django":{
     color:'#fff',
     backgroundColor:"#113527"
+  },
+  "기타":{
+    backgroundColor:'#fff',
+    color:'#000'
   }
 }

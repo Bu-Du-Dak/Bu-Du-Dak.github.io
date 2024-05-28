@@ -10,7 +10,7 @@ import '@toast-ui/editor/dist/theme/toastui-editor-dark.css'
 import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
 import { useRef, useState } from 'react';
 
-const TextEditor = () => {
+const TextEditor = ({onChange,value}) => {
   const toastRef = useRef(null);
   const [contents, setContents] = useState('');
   const onChangeEditor = () => {
@@ -19,14 +19,15 @@ const TextEditor = () => {
   return (
     <>
       <Editor
+        
         ref={toastRef}
         height="600px"
-        initialValue=""
+        initialValue={contents||''}
         previewStyle="vertical"
         theme="dark"
         initialEditType="markdown"
         onChange={onChangeEditor}
-        useCommandShortcut={true}
+        // useCommandShortcut={true}
         autofocus={false}
         plugins={[colorSyntax, [codeSyntaxHighlight, { highlighter: Prism }]]}
       />
