@@ -4,7 +4,8 @@ import BlogCardsUI from './blogCards.presenter';
 const BlogCards = ({id,title,category,content,created}) => {
   const router = useRouter();
   const onClickCard = (path:string) => {
-    router.push(`/blog/detail/${path}`);
+    // router.push(`/blog/${router.query.category}/detail/${path}`);
+    router.push(`/blog/${category}/detail/${path}`);
   };
   return (
     <BlogCardsUI

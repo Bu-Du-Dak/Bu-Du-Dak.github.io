@@ -5,19 +5,63 @@ import { useEffect, useState } from "react"
 
 const BlogList = () => {
     const router = useRouter()
-    const category = router.asPath.split('/')[2]
+    const category = router.query.category
+    const [keyword,setKeyword] = useState('')
     const [page,setPage] = useState(1)
+    const [total,setTotal] = useState(0)
     const [data,setData] = useState()
+    
     const getData = () => {
-        return axios.get(`http://127.0.0.1:8000/api/posts/?page=${page}&categories=${category==='overall' ? '' : category}`).then((res)=>setData(res?.data?.results))
+        return axios.get(process.env.NEXT_PUBLIC_API, {
+            params: {
+                page:router.query.page,
+                categories: category === 'overall' ? '' : category,
+                keyword:router.query.keyword
+            }
+        }).then((res) => {
+            setTotal(res?.data?.count)
+            setData(res?.data?.results)
+        });
+    }
+    const onChangeKeyword = (event) => {
+        setKeyword(event.target.value)
+    }
+    const onClickSearch = () => {
+        router.push({
+            pathname:router.pathname,
+            query:{...router.query,page:1, keyword}
+        })
+    }
+    const onClickPage = (pageNumber) => {
+        if(page===pageNumber) return
+        setPage(pageNumber)
+        router.push({
+            pathname:router.pathname,
+            query:{...router.query,page:pageNumber}
+        })
     }
     useEffect(()=>{
-        getData()   
+        const { keyword,page } = router.query;
+        if (keyword) {
+            setKeyword(String(keyword));
+        }else{
+            setKeyword('')
+        }
+        if(page){
+            setPage(Number(page))
+        }
+        getData()
     },[router.query])
     return(
         <BlogListUI
-            title={String(router.query.category)}
             data={data}
+            total={total}
+            title={String(router.query.category)}
+            keyword={keyword}
+            currentPage={page}
+            onChangeKeyword={onChangeKeyword}
+            onClickSearch={onClickSearch}
+            onClickPage={onClickPage}
         />
     )
 }

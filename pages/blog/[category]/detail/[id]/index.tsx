@@ -1,4 +1,4 @@
-import BlogDetail from "../../../../src/components/unit/blog/detail/blogDetail.container"
+import BlogDetail from "../../../../../src/components/unit/blog/detail/blogDetail.container"
 
 const BlogDetailPage = () => {
     return(

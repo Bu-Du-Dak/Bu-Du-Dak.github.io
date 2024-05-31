@@ -13,9 +13,12 @@ const BlogDetail = () => {
         getData(router.query.id)
     },[router.query.id])
     return(
+        data ?
         <BlogDetailUI
             data={data}
         />
+        :
+        <>loading...</>
     )
 }
 export default BlogDetail

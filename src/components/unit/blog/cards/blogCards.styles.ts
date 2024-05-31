@@ -55,6 +55,7 @@ export const CardContents = styled(Contents)`
   -webkit-box-orient: vertical;
   white-space: pre-wrap;
   line-height: 1.5rem;
+  height: 3rem;
   max-height: 4rem;
 `;
 export const CardDate = styled(SmallText)`

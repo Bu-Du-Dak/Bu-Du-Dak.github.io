@@ -1,15 +1,18 @@
-import rehypeRaw from 'rehype-raw';
-import ReactMarkdown from 'react-markdown';
 import SectionPage from "../../Section/Section.index"
 import styled from '@emotion/styled';
+import dynamic from 'next/dynamic';
 
+const DynamicViewer = dynamic(
+    ()=>import('../../toast/viewer/textViewer'),
+    {ssr:false}
+)
 const BlogDetailUI = ({data}) => {
     return(
             <SectionPage title={data?.title} Component={
                 <>
-                <Date>{`작성일 : ${data?.created}`}</Date>
+                <Date>{`작성일 : ${data?.created.toString().split('T')[0]}`}</Date>
                 <ContentBox>
-                    <ReactMarkdown rehypePlugins={[rehypeRaw]}>{data?.content}</ReactMarkdown> 
+                    <DynamicViewer contents={data?.content}/>
                 </ContentBox>
                 </>
             }/>

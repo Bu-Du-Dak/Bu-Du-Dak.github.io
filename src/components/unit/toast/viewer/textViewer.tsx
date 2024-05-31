@@ -1,26 +1,35 @@
-import 'prismjs/components/prism-java';
-import 'prismjs/themes/prism.css'; 
+import { Viewer } from '@toast-ui/react-editor';
+import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
 import '@toast-ui/editor/dist/toastui-editor.css';
-import '@toast-ui/editor/dist/theme/toastui-editor-dark.css'
+import '@toast-ui/editor/dist/toastui-editor-viewer.css';
+import '@toast-ui/editor/dist/theme/toastui-editor-dark.css';
 import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
-import { Viewer } from "@toast-ui/react-editor";
 
 import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
-import Prism from "prismjs";
-import styled from "@emotion/styled";
-import { useTheme } from "next-themes";
-const TextViewer = ({contents}) => {
-    const {theme} = useTheme()
-    return(
-        <Wrapper style={{width:'100%',height:'500px'}}>
-            <Viewer
-            theme={theme}
-            initialValue={contents}
-            plugins={[[codeSyntaxHighlight, { highlighter: Prism }]]}
-          />
-        </Wrapper>
-    )
-}
+import 'prismjs/components/prism-java'; 
+import 'prismjs/components/prism-python';
+
+import styled from '@emotion/styled';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+
+const TextViewer = ({ contents }) => {
+  const { theme } = useTheme();
+  const [value,setValue] = useState(contents||'')
+  useEffect(()=>{
+    setValue(contents||'')
+  },[contents])
+  return (
+    <Wrapper style={{ width: '100%', height: '500px' }}>
+      <Viewer
+        theme={theme}
+        initialValue={value}
+        plugins={[[codeSyntaxHighlight, { highlighter: Prism }]]}
+      />
+    </Wrapper>
+  );
+};
 
 export const Wrapper = styled.div`
   .toastui-editor-defaultUI {
@@ -45,7 +54,7 @@ export const Wrapper = styled.div`
   }
   .toastui-editor-contents strong {
     margin: 0 !important;
-    font-family: "SUIT700" !important;
+    font-family: 'SUIT700' !important;
   }
   .ProseMirror div {
     font-size: 1.4rem;
@@ -67,37 +76,37 @@ export const Wrapper = styled.div`
   }
   .toastui-editor-contents h1 {
     font-size: 3rem;
-    font-family: "SUIT700";
+    font-family: 'SUIT700';
     color: inherit;
     margin-top: 3rem;
   }
   .toastui-editor-contents h2 {
     font-size: 2.5rem;
-    font-family: "SUIT700";
+    font-family: 'SUIT700';
     color: inherit;
     margin-top: 3rem;
   }
   .toastui-editor-contents h3 {
     font-size: 2rem;
-    font-family: "SUIT700";
+    font-family: 'SUIT700';
     color: inherit;
     margin-top: 3rem;
   }
   .toastui-editor-contents h4 {
     font-size: 1.7rem;
-    font-family: "SUIT600";
+    font-family: 'SUIT600';
     color: inherit;
     margin-top: 2rem;
   }
   .toastui-editor-contents h5 {
     font-size: 1.4rem;
-    font-family: "SUIT600";
+    font-family: 'SUIT600';
     color: inherit;
     margin-top: 2rem;
   }
   .toastui-editor-contents h6 {
     font-size: 1.2rem;
-    font-family: "SUIT600";
+    font-family: 'SUIT600';
     color: inherit;
     margin-top: 2rem;
   }
@@ -130,9 +139,9 @@ export const Wrapper = styled.div`
     border-radius: 2px;
     font-size: 1.2rem;
     line-height: 1rem;
-    .token.operator{
-      background-color: none;
-  }
+    .token.operator {
+      background-color: transparent !important;
+    }
   }
   .toastui-editor-contents pre {
     margin: 2px 0 8px;
@@ -141,7 +150,7 @@ export const Wrapper = styled.div`
   }
   .toastui-editor-contents pre code {
     /* background-color: #f4f7f8; */
-    font-family: "SUIT400";
+    font-family: 'SUIT400';
     /* color: #24292e; */
   }
   blockquote {
@@ -160,8 +169,7 @@ export const Wrapper = styled.div`
 
   .token {
     font-size: 1.2rem;
-}
-
+  }
 `;
 
-export default TextViewer
+export default TextViewer;

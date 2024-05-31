@@ -1,10 +1,20 @@
 import styled from "@emotion/styled"
 import { UilSearch } from '@iconscout/react-unicons'
-const SearchInput = () => {
+import { ChangeEvent, KeyboardEvent } from "react"
+const SearchInput = ({value,onChange,onClick}:{
+    value?:string
+    onChange:(event:ChangeEvent<HTMLInputElement>)=>void
+    onClick:()=>void
+}) => {
+    const keyPressEnter = (event:KeyboardEvent<HTMLInputElement>) => {
+        if(event.key==='Enter'){
+            onClick()
+        }
+    }
     return(
         <Wrapper>
-            <Input placeholder="제목 혹은 내용을 입력해주세요."/>
-            <Icon/>
+            <Input value={value||''} onChange={onChange} onKeyDown={keyPressEnter} placeholder="제목 혹은 내용을 입력해주세요."/>
+            <Icon onClick={onClick}/>
         </Wrapper>
     )
 }
