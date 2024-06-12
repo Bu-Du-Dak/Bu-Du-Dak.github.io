@@ -3,22 +3,23 @@ import BlogDetailUI from "./blogDetail.presenter"
 import axios from "axios"
 import { useRouter } from "next/router"
 
-const BlogDetail = () => {
+const BlogDetail = ({staticData}) => {
     const router = useRouter()
-    const [data,setData] = useState()
+    const [data,setData] = useState(staticData)
+    const [isLoading,setIsLoading] = useState(true)
     const getData = (id) => {
-        id && axios.get(`http://127.0.0.1:8000/api/posts/${id}`).then((res)=>setData(res.data))
+        id && axios.get(`${process.env.NEXT_PUBLIC_API}${id}`).then((res)=>setData(res.data)).finally(()=>setIsLoading(false))
     }
     useMemo(()=>{
         getData(router.query.id)
     },[router.query.id])
     return(
-        data ?
+        !isLoading ?
         <BlogDetailUI
             data={data}
         />
         :
-        <>loading...</>
+        <div>loading...</div>
     )
 }
 export default BlogDetail

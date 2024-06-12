@@ -70,7 +70,6 @@ export const Wrapper = styled.div`
   }
   .toastui-editor-contents p img {
     display: block;
-    width: 750px;
     margin: 3rem auto;
     height: auto;
   }

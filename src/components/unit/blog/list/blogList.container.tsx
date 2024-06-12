@@ -3,13 +3,16 @@ import BlogListUI from "./blogList.presenter"
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-const BlogList = () => {
+const BlogList = ({staticData,staticTotal,staticCategories}) => {
     const router = useRouter()
-    const category = router.query.category
+    // const category = router.query.category 
+    const category = staticCategories
     const [keyword,setKeyword] = useState('')
     const [page,setPage] = useState(1)
-    const [total,setTotal] = useState(0)
-    const [data,setData] = useState()
+    // const [total,setTotal] = useState(0)
+    const [total,setTotal] = useState(staticTotal)
+    // const [data,setData] = useState()
+    const [data,setData] = useState(staticData)
     
     const getData = () => {
         return axios.get(process.env.NEXT_PUBLIC_API, {
