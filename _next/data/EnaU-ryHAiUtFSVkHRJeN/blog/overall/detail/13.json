@@ -1,0 +1,1 @@
+{"pageProps":{"data":{"id":13,"title":"test02","categories":"","content":"```javascript\nconst aaa = 0;\nconst a() => {\n    return 1\n}\n```\n\n```python\nint j = 0\ndef bbb ():\n    return 0\n```","created":"2024-05-29T00:00:00Z","updated":"2024-05-29"}},"__N_SSG":true}
