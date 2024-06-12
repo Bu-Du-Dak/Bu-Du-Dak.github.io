@@ -1,1 +1,0 @@
-{"pageProps":{"data":{"id":14,"title":"tttt","categories":"Python","content":"```python\nstr a = 'aaaa'\nint b = 0\ndef c():\n    a+b\n```","created":"2024-05-29T00:00:00Z","updated":"2024-05-29"}},"__N_SSG":true}
