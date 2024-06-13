@@ -6,7 +6,7 @@ export async function getStaticPaths() {
     const paths = [];
     try{
         for (const category of categories) {
-            const res = await axios.get(`${process.env.NEXT_PUBLIC_API}`, {
+            const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/posts/`, {
               params: { categories: category }
             });
             const posts = res.data.results;
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
   
   export async function getStaticProps({ params }) {
     try{
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_API}${params.id}`);
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/posts/${params.id}`,{timeout:5000});
         const data = res.data;
       
         return {

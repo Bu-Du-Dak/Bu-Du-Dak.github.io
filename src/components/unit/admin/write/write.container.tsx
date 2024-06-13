@@ -6,8 +6,9 @@ import { Editor } from '@toast-ui/react-editor';
 const Write = () => {
     const editorRef = useRef<Editor>(null)
     const [variables,setVariables] = useState({})
+    console.log(variables)
     const onClickWrite = async () => {
-        await axios.post('http://127.0.0.1:8000/api/posts/',{
+        await axios.post(`${process.env.NEXT_PUBLIC_API}/posts/`,{
             title:variables['title'],
             categories:variables['category'],
             content:variables['content']

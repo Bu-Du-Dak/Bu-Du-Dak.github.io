@@ -13,16 +13,31 @@ export const CardWrapper = styled.div`
   backdrop-filter: blur(0.3rem);
   border: 0.5px solid rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
+  border:.1px solid var(--text-color-disabled);
   box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: transform 0.3s ease;
   :hover{
-    scale: 1.01;
+    transform: scale(1.01);
+    .mainImage{
+      transform: scale(1.1);
+    }
   }
 `;
-export const CardImage = styled.div`
+export const ImageWrapper = styled.div`
   width: 100%;
   height: 15rem;
+  overflow: hidden;
+  border-radius: 1rem;
+`
+export const CardImage = styled.div<{src?:string}>`
+  width: 100%;
+  height: 15rem;
+  background-image: ${({ src }) => src ? `url(${src})` : 'none'};
+  background-size: cover;
+  background-position: center;
   background-color: gray;
+  transition: transform 0.3s ease;
 `;
 export const CardCategory = styled.div`
   width: fit-content;

@@ -17,7 +17,7 @@ export async function getStaticPaths() {
   export async function getStaticProps({ params }) {
     const category = params.category;
   
-    const res = await axios.get(process.env.NEXT_PUBLIC_API, {
+    const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/posts/`, {
       params: {
         page: 1,
         categories: category === 'overall' ? '' : category,

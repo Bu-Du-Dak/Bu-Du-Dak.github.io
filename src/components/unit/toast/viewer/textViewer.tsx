@@ -45,6 +45,7 @@ export const Wrapper = styled.div`
     margin: 1.4rem 0 !important;
     width: 100%;
     word-break: keep-all;
+    font-size: 1rem;
   }
   .toastui-editor-contents br {
     margin: 1.4rem 0 !important;
@@ -74,37 +75,37 @@ export const Wrapper = styled.div`
     height: auto;
   }
   .toastui-editor-contents h1 {
-    font-size: 3rem;
-    font-family: 'SUIT700';
-    color: inherit;
-    margin-top: 3rem;
-  }
-  .toastui-editor-contents h2 {
     font-size: 2.5rem;
     font-family: 'SUIT700';
     color: inherit;
     margin-top: 3rem;
   }
-  .toastui-editor-contents h3 {
+  .toastui-editor-contents h2 {
     font-size: 2rem;
     font-family: 'SUIT700';
     color: inherit;
     margin-top: 3rem;
   }
-  .toastui-editor-contents h4 {
+  .toastui-editor-contents h3 {
     font-size: 1.7rem;
-    font-family: 'SUIT600';
+    font-family: 'SUIT700';
     color: inherit;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
-  .toastui-editor-contents h5 {
+  .toastui-editor-contents h4 {
     font-size: 1.4rem;
     font-family: 'SUIT600';
     color: inherit;
     margin-top: 2rem;
   }
-  .toastui-editor-contents h6 {
+  .toastui-editor-contents h5 {
     font-size: 1.2rem;
+    font-family: 'SUIT600';
+    color: inherit;
+    margin-top: 2rem;
+  }
+  .toastui-editor-contents h6 {
+    font-size: 1.1rem;
     font-family: 'SUIT600';
     color: inherit;
     margin-top: 2rem;
@@ -143,6 +144,7 @@ export const Wrapper = styled.div`
     }
   }
   .toastui-editor-contents pre {
+    border: .1px solid var(--selected-text-color);
     margin: 2px 0 8px;
     padding: 18px;
     /* background-color: #f4f7f8; */

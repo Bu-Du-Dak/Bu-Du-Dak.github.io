@@ -8,7 +8,7 @@ const BlogDetail = ({staticData}) => {
     const [data,setData] = useState(staticData)
     const [isLoading,setIsLoading] = useState(true)
     const getData = (id) => {
-        id && axios.get(`${process.env.NEXT_PUBLIC_API}${id}`).then((res)=>setData(res.data)).finally(()=>setIsLoading(false))
+        id && axios.get(`${process.env.NEXT_PUBLIC_API}/posts/${id}`).then((res)=>setData(res.data)).finally(()=>setIsLoading(false))
     }
     useMemo(()=>{
         getData(router.query.id)

@@ -33,7 +33,7 @@ const TextEditor = ({editorRef,onChange,variables}) => {
             const FileArr = [blob];
             const formData = new FormData()
             formData.append('image',FileArr[0])
-            await axios.post('http://127.0.0.1:8000/api/images/',formData).then((result)=>{
+            await axios.post(`${process.env.NEXT_PUBLIC_API}/images/`,formData).then((result)=>{
               const file = result.data.image || "";
               callback(file);
               return false;

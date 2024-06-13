@@ -1,14 +1,12 @@
 import * as S from './list.styles'
-const ListUI = () => {
-    const temp = new Array(100).fill(1)
+const ListUI = ({data}) => {
     return(
         <S.Wrapper>
-            {temp.map((e)=>(
-
-            <S.ItemRow>
-                <S.ItemDate>22222222</S.ItemDate>
-                <S.ItemCategories>wqdqwdqwdqwd</S.ItemCategories>
-                <S.ItemTitle>qwdjonqwdowqndioqwd</S.ItemTitle>
+            {data.map((e)=>(
+            <S.ItemRow key={e.id}>
+                <S.ItemDate>{e.updated}</S.ItemDate>
+                <S.ItemCategories>{e.categories}</S.ItemCategories>
+                <S.ItemTitle>{e.title}</S.ItemTitle>
                 <S.ItemEdit>Edit</S.ItemEdit>
                 <S.ItemDelete>Delete</S.ItemDelete>
             </S.ItemRow>
