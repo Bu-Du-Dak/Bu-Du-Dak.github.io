@@ -37,7 +37,6 @@ export const TextWrapper = styled.div`
 `;
 export const TypingWrapper = styled.p`
   height: 3rem;
-  /* font-size: 2.3rem; */
   font-size: 1.5rem;
   white-space: pre;
   display: flex;
