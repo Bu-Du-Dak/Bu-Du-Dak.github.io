@@ -6,7 +6,6 @@ const DynamicEditor = dynamic(
 );
 const WriteUI = ({editorRef,variables,onChangeInput,onChangeCodeEditor,onChangeSelection,onClickWrite}) => {
   const selections = ['선택','TypeScript','Python']
-  
   return (
     <S.Wrapper>
         <S.TitleWrapper>

@@ -1,14 +1,15 @@
 import { MenuProps } from 'antd';
-import { useState } from 'react';
-import { ArrowsAltOutlined, BulbOutlined, FormOutlined, PythonOutlined, UserOutlined } from '@ant-design/icons';
+import { useMemo, useState } from 'react';
+import { BulbOutlined, FormOutlined, JavaScriptOutlined, PythonOutlined, UserOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import DrawerUI from './drawer.presenter';
+import axios from 'axios';
 const MenuDrawer = () => {
   type MenuItem = Required<MenuProps>['items'][number];
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [openKeys, setOpenKeys] = useState([]);
-  const [blogCategories, setBlogCategories] = useState();
+  const [categories,setCategories] = useState([])
   const onClick = e => {
     if (e.keyPath.length > 1) {
       router.push(`/${e.keyPath[1]}/${e.keyPath[0]}`);
@@ -19,9 +20,30 @@ const MenuDrawer = () => {
       setOpenKeys([]);
     }
   };
+  const getCategoryName = (key:string) => {
+    switch(key){
+      case 'Python' : return 'Python'
+      case 'TypeScript' : return 'JS / TS'
+      default : return '전체보기'
+    }
+  }
+  const getCategoryIcon = (key:string) => {
+    switch(key){
+      case 'Python' : return <PythonOutlined />
+      case 'TypeScript' : return <JavaScriptOutlined />
+      default : return 
+    }
+  }
+  const getCategories = () => {
+    axios.get(`${process.env.NEXT_PUBLIC_API}/category-post-count/`).then(res=>{
+      const total = res.data.reduce((sum,item)=> sum+=item.count,0)
+      setCategories([{categories:'overall',title:'전체보기',count:total},...res.data])
+    })
+  }
   const onOpenChange = keys => {
     setOpenKeys(keys);
   };
+  useMemo(()=>{getCategories()},[])
   const getItem = (
     label: React.ReactNode,
     key: React.Key,
@@ -46,27 +68,11 @@ const MenuDrawer = () => {
       getItem('2021', '2021', <div>🐮</div>),
     ]),
 
-    getItem('Blog', 'blog', <FormOutlined />, [
-      // ['a','b','c'].map((e)=>
-      // {
-      //  return getItem(e,e)
-      // })
-      getItem('전체보기', 'overall', <ArrowsAltOutlined />),
-      getItem('Python', 'Python',<PythonOutlined />),
-      // getItem('Option 11', '11'),
-      // getItem('Option 12', '12'),
-    ]),
+    getItem('Blog', 'blog', <FormOutlined />, 
+      // categories.map((e)=>(getItem(`${getCategoryName(e.categories)} (${e.count})`,e.categories, getCategoryIcon(e.categories))))
+      categories.map((e)=>(getItem(`${getCategoryName(e.categories)} (${e.count})`,e.categories, getCategoryIcon(e.categories))))
+  ),
     { type: 'divider' },
-    // getItem(
-    //   'Contact',
-    //   'contact',
-    //   null,
-    //   [
-    //     // getItem('E-mail', 'email', <MailOutlined />),
-    //     // getItem('Github', 'github', <GithubOutlined />),
-    //   ],
-    //   'group'
-    // ),
   ];
   return (
     <DrawerUI

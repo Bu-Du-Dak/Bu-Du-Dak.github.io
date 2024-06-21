@@ -113,16 +113,26 @@ export const ProfileWrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 20px;
+  padding: 20px 0;
+  margin-top: 2rem;
+  border: 1px solid var(--selected-text-color);
+  border-radius: 1rem;
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(0.3rem);
 `;
 export const ProfileDeco = styled.div`
   @media (min-width: 420px) {
-    width: 13rem;
-    height: 16rem;
+    width: 6.45rem;
+    height: 7.35rem;
+    top:4.7rem;
+    left: 3.7rem;
   }
-  width: 9rem;
-  height: 11rem;
-  border-radius: 2rem;
+  /* width: 9rem;
+  height: 11rem; */
+  width: 4.2rem;
+  height: 4.7rem;
+  /* border-radius: 2rem; */
+  
   background: linear-gradient(
     137deg,
     rgba(255, 246, 183, 0.2),
@@ -138,6 +148,8 @@ export const ProfileDeco = styled.div`
         : lightImageCardEffect} 4s infinite linear
     `};
   position: absolute;
+  top:3.4rem;
+  left: 2.3rem;
 `;
 export const ProfileImage = styled.div`
   @media (min-width: 420px) {

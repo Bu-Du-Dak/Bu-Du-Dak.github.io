@@ -7,7 +7,7 @@ import '@toast-ui/editor/dist/theme/toastui-editor-dark.css';
 import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
 
 import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
-import 'prismjs/components/prism-java'; 
+import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-python';
 
 import styled from '@emotion/styled';
@@ -16,10 +16,10 @@ import { useEffect, useState } from 'react';
 
 const TextViewer = ({ contents }) => {
   const { theme } = useTheme();
-  const [value,setValue] = useState(contents||'')
-  useEffect(()=>{
-    setValue(contents||'')
-  },[contents])
+  const [value, setValue] = useState(contents || '');
+  useEffect(() => {
+    setValue(contents || '');
+  }, [contents]);
   return (
     <Wrapper style={{ width: '100%', height: '500px' }}>
       <Viewer
@@ -137,22 +137,25 @@ export const Wrapper = styled.div`
     padding: 2px 3px;
     letter-spacing: -0.3px;
     border-radius: 2px;
-    font-size: 1.2rem;
+    span {
+      font-size: 1rem;
+    }
+    font-size: 1rem;
     line-height: 1rem;
     .token.operator {
       background-color: transparent !important;
     }
   }
   .toastui-editor-contents pre {
-    border: .1px solid var(--selected-text-color);
+    border: 0.1px solid var(--selected-text-color);
     margin: 2px 0 8px;
     padding: 18px;
-    /* background-color: #f4f7f8; */
+    .token.operator {
+      background-color: transparent !important;
+    }
   }
   .toastui-editor-contents pre code {
-    /* background-color: #f4f7f8; */
     font-family: 'SUIT400';
-    /* color: #24292e; */
   }
   blockquote {
     margin: 2rem 0px;
