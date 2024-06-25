@@ -1,6 +1,6 @@
 import { MenuProps } from 'antd';
 import { useMemo, useState } from 'react';
-import { BulbOutlined, FormOutlined, JavaScriptOutlined, PythonOutlined, UserOutlined } from '@ant-design/icons';
+import { BulbOutlined, CloudOutlined, FormOutlined, JavaScriptOutlined, PythonOutlined, UserOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import DrawerUI from './drawer.presenter';
 import axios from 'axios';
@@ -24,6 +24,7 @@ const MenuDrawer = () => {
     switch(key){
       case 'Python' : return 'Python'
       case 'TypeScript' : return 'JS / TS'
+      case 'devOps' : return 'DevOps'
       default : return '전체보기'
     }
   }
@@ -31,6 +32,7 @@ const MenuDrawer = () => {
     switch(key){
       case 'Python' : return <PythonOutlined />
       case 'TypeScript' : return <JavaScriptOutlined />
+      case 'DevOps' : return <CloudOutlined />
       default : return 
     }
   }

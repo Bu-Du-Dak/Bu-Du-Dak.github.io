@@ -5,7 +5,7 @@ const DynamicEditor = dynamic(
   { ssr: false } // 서버 사이드 렌더링 비활성화
 );
 const EditUI = ({isLoading,editorRef,variables,onChangeInput,onChangeCodeEditor,onChangeSelection,onClickWrite}) => {
-  const selections = ['선택','TypeScript','Python']
+  const selections = ['선택','TypeScript','Python','devOps']
   
   return (
     <S.Wrapper>
