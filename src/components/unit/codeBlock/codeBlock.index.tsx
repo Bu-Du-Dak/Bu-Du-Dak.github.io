@@ -26,7 +26,7 @@ const CodeBlock = ({ language, code }:{language?:string,code:string}) => {
   };
   return (
     <CodeBlockWrapper ref={codeWrapperRef} expanded={expanded}>
-      <Code ref={codeRef} className={`language-${language||'javascript'}`}>
+      <Code ref={codeRef} className={`language-${language||'typescript'}`}>
         {code}
       </Code>
       {(isOverflowing || expanded) && (
