@@ -41,7 +41,9 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-color: rgba(255,255,255,.1);
+  backdrop-filter: blur(0.3rem);
   top: 0;
   position: sticky;
   animation: ${({ scrollDirection }: { scrollDirection: string }) =>
@@ -52,6 +54,5 @@ const Wrapper = styled.header`
 const Title = styled.h1`
   font-size: 1.2rem;
   cursor: pointer;
-
 `
 export default MenuBar;

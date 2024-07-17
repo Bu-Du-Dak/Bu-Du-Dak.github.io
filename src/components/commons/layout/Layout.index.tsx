@@ -1,7 +1,7 @@
 import { useTheme } from 'next-themes';
 import { UilMoon, UilSun } from '@iconscout/react-unicons';
 import { BoldText, Container, SmallText } from '../../../commons/globalStyles';
-import { Contents, LayoutWrapper, RecentBlog, ThemeBtn } from './Layout.styles';
+import { Contents, LayoutWrapper, LoadingBar, RecentBlog, ThemeBtn } from './Layout.styles';
 import MenuBar from './menuBar/menuBar';
 import useScrollDirection from '../../../hooks/useScrollDirection';
 import { useEffect, useMemo, useState } from 'react';
@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 const Layout = props => {
 	const { theme, setTheme } = useTheme();
 	const router = useRouter()
-	const scrollDirection = useScrollDirection();
+	const {scrollDirection,scrollPercentage} = useScrollDirection();
 	const [loading,setLoading] = useState(true)
 	const [isVisible,setIsVisible] = useState(true)
 	const [recentPost,setRecentPost] = useState({
@@ -34,7 +34,7 @@ const Layout = props => {
 	const getScroll = useMemo(() => {
 		return scrollDirection;
 	}, [scrollDirection]);
-
+	
 	useEffect(()=>{
 		const timer = setTimeout(()=>{
 			setIsVisible(false)
@@ -42,13 +42,16 @@ const Layout = props => {
 	    setLoading(false)
 		return ()=>clearTimeout(timer)
 	},[])
+	
 	useMemo(()=>{
 		getData()
 	},[])
+	
 	if(loading) return
 	return (
 		!loading &&
 		<Container>
+			{scrollPercentage>0&&<LoadingBar scrollPercentage={scrollPercentage}/>}
 			<MenuBar scrollDirection={getScroll} />
 			<Container>
 				<LayoutWrapper>

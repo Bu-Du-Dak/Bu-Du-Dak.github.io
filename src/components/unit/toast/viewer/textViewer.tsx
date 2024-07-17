@@ -4,9 +4,13 @@ import 'prismjs/themes/prism.css';
 import '@toast-ui/editor/dist/toastui-editor.css';
 import '@toast-ui/editor/dist/toastui-editor-viewer.css';
 import '@toast-ui/editor/dist/theme/toastui-editor-dark.css';
+
+import 'prism-themes/themes/prism-xonokai.css';
 import '@toast-ui/editor-plugin-code-syntax-highlight/dist/toastui-editor-plugin-code-syntax-highlight.css';
 
 import codeSyntaxHighlight from '@toast-ui/editor-plugin-code-syntax-highlight';
+
+import 'prismjs/components/prism-typescript';
 import 'prismjs/components/prism-java';
 import 'prismjs/components/prism-python';
 
@@ -25,6 +29,7 @@ const TextViewer = ({ contents }) => {
       <Viewer
         theme={theme}
         initialValue={value}
+        
         plugins={[[codeSyntaxHighlight, { highlighter: Prism }]]}
       />
     </Wrapper>
@@ -132,7 +137,7 @@ export const Wrapper = styled.div`
   }
 
   .toastui-editor-contents code {
-    color: #c1798b;
+    /* color: #c1798b; */
     /* background-color: #f9f2f4; */
     padding: 2px 3px;
     letter-spacing: -0.3px;
@@ -155,11 +160,32 @@ export const Wrapper = styled.div`
     }
   }
   .toastui-editor-contents pre code {
-    font-family: 'SUIT400';
+    font-size: 1rem;
+    font-family: 'SUIT400' !important;
+    color: #4BFAF3;
+    .token.builtin{
+      color:#D55C72;
+    }
+    .token.operator{
+      color:#fff;
+    }
+    .token.punctuation{
+      color:goldenrod;
+    }
+    .token.number{
+      /* color:#6C85C0; */
+      color:#fff;
+    }
+    .token.string{
+      color:#B7D48F;      
+    }
+    .token.keyword{
+      color:#7B5E92;
+    }
   }
   blockquote {
     margin: 2rem 0px;
-    border-left: 4px solid rgba(100, 0, 255, 0.5) !important;
+    border-left: 4px solid rgb(240, 29, 255) !important;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background: #f8f9fa;
@@ -174,6 +200,7 @@ export const Wrapper = styled.div`
   .token {
     font-size: 1.2rem;
   }
+  
 `;
 
 export default TextViewer;

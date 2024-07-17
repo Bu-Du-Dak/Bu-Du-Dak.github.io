@@ -1,7 +1,7 @@
 export const HOME_TEXT = {
   intro: `2020년 단골 손님의 노트북 화면을 처음 보게 된 뒤로 지금까지 웹 개발에 푹 빠진 홍재훈입니다.
     코딩 부트캠프를 시작으로 현재는 <strong style="color:var(--selected-text-color);">Reable(EAN Technology)</strong>에서 <strong style="color:var(--selected-text-color)">개발팀 리드</strong>로 근무하고 있습니다.
-    NextJs와 graphQL을 기반으로 여러 라이브러리 사용에 능숙하고 현재는 더욱 <strong style="color:var(--selected-text-color)">원활한 협업 및 백엔드 전향을 위해 Python을 공부</strong>하고 있습니다.
+    NextJs와 graphQL을 기반으로 여러 라이브러리 사용에 능숙하고 현재는 더욱 <strong style="color:var(--selected-text-color)">원활한 협업을 위해 Python을 공부</strong>하고 있습니다.
     가독성이 좋은 깔끔한 코드를 지향하며 건설적 비판을 통해 한층 더 발전하려 노력합니다.
     (사이트 내 문제점이나 블로그 작성 글 내 잘못된 내용이 있다면 언제든 말씀 부탁드립니다!)
     `,

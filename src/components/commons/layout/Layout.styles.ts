@@ -100,3 +100,14 @@ export const ThemeBtn = styled.div`
     `}
   }
 `;
+export const LoadingBar = styled.div<{scrollPercentage:number}>`
+  height: .15rem;
+  width: 100%;
+  background-color: var(--selected-text-color);
+  position: sticky;
+  top: 0;
+  transform-origin: left;
+  transform: scaleX(${({ scrollPercentage }) => scrollPercentage / 100});
+  transition: transform 0.5s ease-out;
+  z-index:3;
+`
