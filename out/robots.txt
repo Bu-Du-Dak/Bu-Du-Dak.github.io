@@ -2,3 +2,4 @@
 User-agent: *
 Allow: /
 Disallow: /admin
+Sitemap: https://bu-du-dak.github.io/sitemap.xml
