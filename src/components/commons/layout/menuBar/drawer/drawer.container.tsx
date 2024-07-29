@@ -24,7 +24,7 @@ const MenuDrawer = () => {
     switch(key){
       case 'Python' : return 'Python'
       case 'TypeScript' : return 'JS / TS'
-      case 'devOps' : return 'DevOps'
+      case 'DevOps' : return 'DevOps'
       default : return '전체보기'
     }
   }

@@ -25,7 +25,7 @@ const TextViewer = ({ contents }) => {
     setValue(contents || '');
   }, [contents]);
   return (
-    <Wrapper style={{ width: '100%', height: '500px' }}>
+    <Wrapper style={{ width: '100%', paddingBottom:'6rem' }}>
       <Viewer
         theme={theme}
         initialValue={value}

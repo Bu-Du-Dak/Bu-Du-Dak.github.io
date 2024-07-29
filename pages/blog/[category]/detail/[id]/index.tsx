@@ -2,7 +2,7 @@ import axios from 'axios';
 import BlogDetail from '../../../../../src/components/unit/blog/detail/blogDetail.container';
 
 export async function getStaticPaths() {
-  const categories = ['overall', 'TypeScript', 'Python', 'devOps'];
+  const categories = ['overall', 'TypeScript', 'Python', 'DevOps'];
   const paths = [];
   try {
     for (const category of categories) {

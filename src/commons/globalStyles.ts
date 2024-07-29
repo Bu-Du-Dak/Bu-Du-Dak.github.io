@@ -346,6 +346,10 @@ export const CHIP_STYLES = {
     color:'#fff',
     backgroundColor:"#113527"
   },
+  "DevOps":{
+    backgroundColor:'#fff',
+    color:'#0076ED'
+  },
   "기타":{
     backgroundColor:'#fff',
     color:'#000'

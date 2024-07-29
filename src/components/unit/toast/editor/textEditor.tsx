@@ -30,11 +30,15 @@ const TextEditor = ({editorRef,onChange,variables}) => {
         language='ko-KR'
         plugins={[colorSyntax, [codeSyntaxHighlight, { highlighter: Prism }]]}
         hooks={{
+          
           addImageBlobHook: async (blob, callback) => {
             const FileArr = [blob];
             const formData = new FormData()
             formData.append('image',FileArr[0])
-            await axios.post(`${process.env.NEXT_PUBLIC_API}/images/`,formData).then((result)=>{
+            const apiUrl = `${process.env.NEXT_PUBLIC_API}/images/`
+            await axios.post(apiUrl,formData,{headers:{
+              'Content-Type':'multipart/form-data'
+            }}).then((result)=>{
               const file = result.data.image || "";
               callback(file);
               return false;

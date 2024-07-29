@@ -26,7 +26,7 @@ const BlogCardsUI = ({
         {category ? category : '기타'}
       </S.CardCategory>
       <S.CardTitle>{title}</S.CardTitle>
-      <S.CardContents>{contents.split('#### ')[1]}</S.CardContents>
+      <S.CardContents>{contents.split('### ')[1]||contents.split('#### ')[1]}</S.CardContents>
       <S.CardDate>{date}</S.CardDate>
     </S.CardWrapper>
   );
